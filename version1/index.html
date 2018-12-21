@@ -1,0 +1,354 @@
+<!DOCTYPE>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width" >
+        <meta name="description" content="Troy's first self-build website. I myself am entirely made of flasw, stitched together with good intentions">
+        <meta name="keywords" content="TroyWu Troy's_blog Hongbo Wu KSU Blog ">
+        <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+        <link rel="stylesheet" href="vendors/grid.css">
+        <link rel="stylesheet" href="vendors/normalize.css">
+        <link rel="stylesheet" href="vendors/animate.css">
+        <link rel="stylesheet" href="style/index.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Caveat:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+        <link rel="icon" href="/image/web_icon.png" type="image/gif" sizes="100%">
+        <title>Troy's_Blog</title>
+    </head>
+    <body>
+        <header>
+            <div class="header-text">
+                <h1>Troy Wu</h1>
+                <div class="header-resumer"><a href="/download/resume.pdf" download="Troy_Resume"><i class="fas fa-download"></i></a><div class="resume"><span class="header-span1">My</span> Resume</div></div>
+            </div>
+        </header>
+        <div class="sidebar"> 
+            <div class="sidebar_container">
+                <div class="bigimg">
+                    </div> 
+            </div> 
+        </div>
+               
+        
+        <div id="myNav" class="overlay js--main-nav">
+         
+          <div class="overlay-content">
+            <a href="#about"><span>About</span></a>
+            <a href="#gallery-a"><span>Gallery</span></a>
+            <a href="#blog"><span>Blog</span></a>
+            <a href="#"><span>Contact</span></a>
+          </div>
+           
+        </div>
+        <span class="Open js--nav-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+            <nav>
+                <div class="row">
+                    <ul class="navbar">
+                        <li><a href="#about" class="scroll-about">About</a></li>
+                        <li><a href="#gallery-a" class="scroll-gallery">Gallery</a></li>
+                        <li><a href="#blog" class="scroll-blog">Blog</a></li>
+                        <li><a href="#"><div class="dropdown" onclick="">
+                          <button class="dropbtn"><i class="fas fa-chevron-circle-down"></i></button>
+                          <div class="dropdown-content">
+                            <a href="#" style="color: white">Blog</a>
+                            <a href="#"  style="color: white">Map</a>
+                            <a href="#"  style="color: white">Fun</a>
+                          </div>
+                            </div></a></li>
+                        
+                    </ul>
+                </div>
+            </nav>
+        
+        <div class="content">
+        
+            <section class="section-about jq-section-about" id="about">
+                <div class="row">
+                    <div class="about-header">
+                       <h3><i class="far fa-address-card icon-small"></i><span>About Me</span></h3>
+                    </div>
+                </div>
+                <div class="col-containera">
+                    <div class="cola js--wp-6">
+                        <div class="about-text">
+                            <h4>Kennesaw State University</h4>
+                            <p>Majoring in Computer Science</p>
+                            <p>Expected Graduation Date: Dec 2018</p>
+                            <p class="gpa"><span>GPA: </span>3.65</p>
+                        </div>
+                    </div>
+                    <div class="cola js--wp-7">
+                        <div class="about-text">
+                            <h4>Achievements</h4>
+                            <ul>
+                                <li>&#8226; Dean's List (2016-2018)</li>
+                                <li>&#8226; 3th Place in Undergraduated Research</li>
+                                <li>&#8226; President International Wavior Award</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            <div class="row project-section js--wp-8">
+                <h4>Projects</h4>
+                 <div class="tab">
+                      <button class="tablinks" onclick="switchProj(event, 'RecipeH')" id="defaultOpen"><div class="project-icon"><i class="fab fa-android"></i></div></button>
+                      <button class="tablinks" onclick="switchProj(event, 'Web')"><div class="project-icon"><i class="fab fa-chrome"></i></div>   
+                    </button>
+                      <button class="tablinks" onclick="switchProj(event, 'Spamail')"><div class="project-icon"><i class="fab fa-python"></i></div></button>
+                </div>
+                <div class="project">
+                    
+                    <div id="RecipeH" class="tabcontent">
+                      <h3>Recipes Helper</h3>
+                      <p>&#9679;	Provided a system that allowed users to easily make a meal decision on ingredients they have by using Java and Oracle Database</p>
+                      <p>&#9679;	Helped users efficiently organize their current recipes</p>
+                        <p>&#9679;	Had the ability to store and create a new recipe </p>
+                    </div>
+
+                    <div id="Web" class="tabcontent">
+                      <h3>RESPONSIVE WEBSITE</h3>
+                      <p>&#9679;	Designed and created a friendly, approachable responsive website by using HTML and CSS</p> 
+                        <p>&#9679;	Provided the website with powerful functions by using Javascript</p>
+                    </div>
+
+                    <div id="Spamail" class="tabcontent">
+                      <h3>SPAM-MAIL CHECK</h3>
+                      <p>&#9679;	Designed and Implanted in Python by using panda framework.</p>
+                        <p>&#9679;	Analyzed and distinguished which are the spam mails from a group of mails by searching the related keywords that most spam mails contain.</p>
+                        <p>&#9679;	Outputted the title of spam mails as a table.</p>
+                    </div> 
+                </div>
+                </div>
+                <div class="row about-skill-div js--wp-1">
+                    <div class="col span-1-of-8"></div>
+                    <div class="col span-6-of-8">
+                        <div class="about-skill">
+                            <h4>Skills Exp</h4>
+                            <div class="about-skill-contain">
+                                   <p>HTML</p>
+                            <div class="about-container" onclick="">
+                              <div class="skills html">90%</div>
+                            </div>
+                            <p>CSS</p>
+                            <div class="about-container" onclick="">
+                              <div class="skills css">90%</div>
+                            </div>
+                            <p>JavaScript</p>
+                            <div class="about-container" onclick="">
+                              <div class="skills js">85%</div>
+                            </div>
+                            <p>Java</p>
+                            <div class="about-container" onclick="">
+                              <div class="skills java">80%</div>
+                            </div>
+                            <p>Python</p>
+                            <div class="about-container" onclick="">
+                              <div class="skills python">80%</div>
+                            </div>
+                            <p>C++</p>
+                            <div class="about-container" onclick="">
+                              <div class="skills c">65%</div>
+                            </div>
+                            <p>SQL</p>
+                            <div class="about-container" onclick="">
+                              <div class="skills sql">60%</div>
+                            </div>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col span-1-of-8">
+                    </div>
+                </div>                 
+            </section>
+            <section class="blogsection section-blog" id="blog">
+           <div class="blog col span-4-of-7 js--wp-4">
+                 <div class="blog-tag" id="tag1" onclick="">
+                  <a href="blog1.html#post1" id="blog1" onclick="">Hello World</a>
+                   <div class="date">
+                     <span class="day">05</span> 
+                     <span class="month">July</span> 
+                   </div>
+                    <span class="year">2018</span>
+               </div>
+                  <div class="blog-tag" id="tag2" onclick="">
+                  <a href="blog1.html#post2" id="blog1">About Me</a>
+                   <div class="date">
+                     <span class="day">31</span> 
+                     <span class="month">July</span> 
+                   </div>
+                    <span class="year">2009</span>
+               </div>
+                 <div class="blog-tag" id="tag3" onclick="">
+                  <a href="#" id="blog1">About Troy</a>
+                   <div class="date">
+                     <span class="day">31</span> 
+                     <span class="month">July</span> 
+                   </div>
+                    <span class="year">2009</span>
+               </div>
+                  <div class="blog-tag" id="tag4" onclick="">
+                  <a href="#" id="blog1">About asdf</a>
+                   <div class="date">
+                     <span class="day">31</span> 
+                     <span class="month">July</span> 
+                   </div>
+                    <span class="year">2009</span>
+               </div>
+                 <div class="blog-tag" id="tag5" onclick="">
+                  <a href="#" id="blog1">About aasdf</a>
+                   <div class="date">
+                     <span class="day">31</span> 
+                     <span class="month">July</span> 
+                   </div>
+                    <span class="year">2009</span>
+               </div>
+                <div class="blog-title1">
+                    <span>B</span>
+                    <span>l</span>
+                    <span>o</span>
+                    <span>g</span>
+               </div>
+               <div class="more" onclick="">
+                   <a href="blog1.html"> <p>M<br>O<br>R<br>E</p></a>     
+               </div>
+            </div>
+                <div class="blog-title col span-3-of-7 js--wp-5">
+                    <div class="blogname">
+                        <img src="image/blogname.png">
+                    </div>
+                </div>
+            </section>
+            <section class="BBB">
+                 <div class="row">
+                    <div class="about-header">
+                       <h3><i class="fab fa-angellist"></i><span>Others voice</span></h3>
+                    </div>
+                </div>
+                <div class="row js--wp-2">
+                        <div class="col span-1-of-10"></div>
+                     <div class="col span-8-of-10">
+                         <div class="BB-container">
+                            <img src="image/wonder.jpg">
+                             <p>I save the world, Troy save 50bucks</p>
+                         </div>
+                         <div class="BB-container BB-container2">
+                            <img src="image/annie.jpg">
+                             <p>When I grow up, I will marry Troy</p>
+                         </div>
+                         <div class="BB-container">
+                            <img src="image/mark-zuckerberg-headshot.jpg">
+                             <p>I'm gladly having Troy in Facebook</p>
+                         </div>
+                         <div class="BB-container BB-container2">
+                            <img src="image/reaper.jpg">
+                             <p>DIE! DIE! DIE......POTG belongs to Troy</p>
+                         </div>
+                         <div class="BB-container">
+                            <img src="image/baozou1.jpg">
+                             <p>Single dog~Single dog~Signle all the way~~</p>
+                         </div>
+                         <div class="BB-container BB-container2">
+                            <img src="image/touxiang_me.jpg">
+                             <p>Thank you for your visit</p>
+                         </div>
+
+                     </div>
+                     <div class="col span-1-of-10"></div>
+                </div>
+            </section>
+            <section class="gallery section-gallery" id="gallery-a">
+                 <div class="row">
+                    <div class="about-header">
+                       <h3><i class="fas fa-camera-retro"></i><span>Gallery</span></h3>
+                    </div>
+                </div>
+                <div class="gallery-container js--wp-3">
+                    <div class="col span-1-of-4" id="col">
+                        <div class="effect">
+                            <a class="galleryItem" href="image/jiangzuang.jpg"><img src="image/jiangzuang.jpg"></a>                          
+                        </div>
+                        <div class="effect">
+                            <a class="galleryItem" href="image/cat1.jpg" data-effect="mfp-zoom-in"><img src="image/cat1.jpg"></a>                          
+                        </div>
+                        <div class="effect">
+                             <a class="galleryItem" href="image/me2.jpg"><img src="image/me2.jpg"></a>                           
+                        </div>
+                    </div>
+                    <div class="col span-1-of-4" id="col">
+                        <div class="effect">
+                             <a class="galleryItem" href="image/me1.jpg"><img src="image/me1.jpg"> </a>     
+                        </div>
+                         <div class="effect">
+                              <a class="galleryItem" href="image/travel1.jpg"><img src="image/travel1.jpg"></a>                           
+                        </div>
+                         <div class="effect">
+                              <a class="galleryItem" href="image/cat2.jpg"><img src="image/cat2.jpg" ></a>                      
+                        </div>     
+                    </div>
+                      <div class="col span-1-of-4" id="col">
+                        <div class="effect">
+                             <a class="galleryItem" href="image/home.jpg"><img src="image/home.jpg"></a>                         
+                        </div>
+                         <div class="effect">
+                              <a class="galleryItem" href="image/kayakimg1.jpg"><img src="image/kayakimg1.jpg" ></a>                            
+                        </div>  
+                           <div class="effect">
+                                <a class="galleryItem" href="image/mekayak.jpg"><img src="image/mekayak.jpg"></a>
+                        </div>
+                    </div>
+                      <div class="col span-1-of-4" id="col">
+                        <div class="effect">
+                             <a class="galleryItem" href="image/travel2.jpg"><img src="image/travel2.jpg"></a>
+                        </div>
+                          
+                         <div class="effect">
+                              <a class="galleryItem" href="image/me3.jpg"><img src="image/me3.jpg"></a>
+                        </div>     
+                           <div class="effect">
+                                <a class="galleryItem" href="image/ymca.jpg"><img src="image/ymca.jpg" ></a>
+                        </div> 
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <ul>
+                    <li><a href="https://www.facebook.com/hongbo.wu.56" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCZR6VpFnGVev_yHLpv4yMeA?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="/image/weixin.jpg" target="_blank"><i class="fab fa-weixin"></i></a></li>
+                    <li><a href="https://www.instagram.com/troy_waitforit_wu/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><h3>Troy Wu&copy;</h3></li>
+                    <li><i class="fas fa-envelope"></i><p>Troywu9527@gmail.com</p></li>
+                </ul>
+            </footer>
+        </div>
+         <div class="Gotop">
+            <i class="fas fa-arrow-alt-circle-up"></i>
+        </div>
+       
+         
+           
+            
+       
+        
+        
+    
+    
+    
+    
+       
+ 
+
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+ <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="javaScript/jquery.waypoints.min.js"></script>
+    <script src="magnific-popup/jquery.magnific-popup.js"></script>
+    <script src="javaScript/home.js"></script>
+    </body>
+
+</html>

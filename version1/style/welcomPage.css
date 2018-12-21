@@ -1,0 +1,88 @@
+* {box-sizing: border-box;}
+html{
+    max-width: 1920px;
+    overflow: hidden;
+    font-size: 20px;
+}
+body{
+    font-family: "Courier New", Courier, monospace;
+    /* Set the font-size to 25 pixels */
+    height: 100%;
+}
+
+.direct{
+    position: absolute;
+    top: 85%;
+    left: 31%;
+    text-align: center;
+}
+.fa-arrow-circle-up{
+    font-size: 250%;
+}
+.direct p{
+    font-size: 200%;
+}
+.img-comp-container {
+  position: absolute; /*should be the same height as the images*/  ;
+  top: 25%;
+  left: 39.2%;
+}
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow:hidden;
+}
+.img-comp-img img {
+  display:block;
+  vertical-align:middle;
+}
+.img-comp-slider {
+  position: absolute;
+  z-index:9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 30px;
+  height: 30px;
+  background-color: rgba(21, 80, 128, 0.8);
+  opacity: 0.7;
+  border-radius: 50%;
+}
+.middle{
+    position: absolute;
+    z-index: 9999;
+    top: 0%;
+    left: 39%;
+    text-align: center;
+}
+ h1{
+    font-size: 25%;
+     padding: 25px;
+     color: black;
+}
+h1 span::before{
+    content: 'the king';
+    margin-top: 25px;
+    font-size: 50px;
+    text-align: center;
+    animation: fadein;
+    transition-delay: 10s;
+    -webkit- animation: fadein 20s;
+}
+@keyframes fadein{
+from{
+    opacity: 0;
+}to{
+    opacity: 1;
+}
+}
+#time{
+    font-size: 120%;
+    color: black;
+}
+.soon-n{
+    font-size: 150%;
+    text-transform: uppercase;
+    margin-left: 4px;
+    color: #17caf7
+}

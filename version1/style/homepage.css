@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #fff;
+    color: black;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    background-color: rgba(94, 199, 255, 0.06);
+    text-rendering: optimizeLegibility;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    height: 100%;
+    max-width: 1920px;
+    overflow: auto;
+    transition:all 0.5s;
+    text-align: center;
+}
+/*******************************/
+/**********Title****************/
+/*********************************/
+.box{
+    margin-top: 5%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 350%;
+    animation: fadeL 5s;
+}
+.box span{
+    margin-left: 15px;
+}
+@keyframes fadeL{
+    from{
+        opacity: 0;
+         color: aquamarine;
+        font-size: 0%;
+    }
+       
+    }to{
+         opacity: 1;     
+}
+
+
+.middle{
+    position: absolute;
+    z-index: 9999;
+    margin-top: 30%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+ .middle h1{
+     bottom: 50%;
+    font-size: 250%;
+     padding: 25px;
+     color: black;
+     background-color: transparent;
+     animation: fadeB 5s;
+}
+@keyframes fadeB{
+    from{
+        color: aquamarine;
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+.middle hr{
+    width: 100px;
+    margin: 10px auto;
+}
+/*h1 span::before{
+    content: 'the king';
+    margin-top: 25px;
+    margin-right: 20px;
+    font-size: 50px;
+    text-align: center;
+    animation: fadein;
+    transition-delay: 10s;
+    -webkit- animation: fadeL 20s;
+}*/
+
+@keyframes fadein{
+from{
+    opacity: 0;
+    color: aquamarine;
+}to{
+    opacity: 1;
+}
+}
+#time{
+    font-size: 120%;
+    color: black;
+}
+.soon-n{
+    font-size: 150%;
+    text-transform: uppercase;
+    margin-left: 4px;
+    color: #17caf7
+}
+@media only screen and (max-width: 510px){
+    .box{
+        top:10%;
+        font-size: 150%;
+    }
+    .middle h1{
+        font-size: 100%;
+        margin-top: 20%;
+    }
+}
+
+

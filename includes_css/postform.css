@@ -1,0 +1,47 @@
+.container {
+  border: 1px solid cyan;
+  border-style: dotted;
+}
+.check {
+  font-size: 45px !important;
+}
+.check i {
+  font-size: 45px !important;
+}
+a {
+  margin-top: 10px !important;
+}
+h1,
+h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.home {
+  font-size: 50px !important;
+  transition-delay: all 0.3s;
+}
+.home:hover {
+  color: #64b5f6 !important;
+}
+
+@media (min-width: 560px) and (max-width: 760px) {
+  h1 {
+    font-size: 55px !important;
+  }
+  h3 {
+    font-size: 30px !important;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 181px) and (max-width: 560px) {
+  h1 {
+    font-size: 35px !important;
+  }
+  h3 {
+    font-size: 20px !important;
+  }
+}
