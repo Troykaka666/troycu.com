@@ -3,4 +3,6 @@
 <script type="text/javascript" src="JS/jquery.waypoints.min.js"></script>
 <script src="./JS/css3-animate-it.js"></script>
 <script type="text/javascript" src="./JS/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+<script tepe="text/javascript" src="./JS/swiper.js"></script>
 <script type="text/javascript" src="./JS/index.js"></script>

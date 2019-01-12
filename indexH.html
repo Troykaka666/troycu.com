@@ -1,7 +1,33 @@
 <!DOCTYPE html>
 <html>
 <?php include 'php_includes/connectDB.php' ?>
-<?php include 'php_includes/index_head.php' ?>
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Troy's first self-build website. I myself am entirely made of flasw, stitched together with good intentions">
+        <meta name="keywords" content="TroyWu Troy's_blog Hongbo Wu KSU Blog ">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <!-- Import Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+            crossorigin="anonymous">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="./CSS/main.css" />
+        <link type="text/css" rel="stylesheet" href="./new_css/newstyle.min.css" />
+        <link rel="stylesheet" href="./CSS/animations.css">
+        <link rel="stylesheet" href="./CSS/imgEffectCommon.css" type="text/css">
+        <link rel="stylesheet" href="./CSS/imgeffect2.css" type="text/css">
+        <link rel="stylesheet" href="./CSS/imgEffect.css" type="text/css">
+        <link type="text/css" rel="stylesheet" href="./CSS/materialize.min.css" media="screen,projection" />
+        <link rel="stylesheet" href="CSS/animate.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+        <!-- slider libary -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <script src="./node_modules/lazysizes/lazysizes.min.js" async=""></script>
+        <!--Let browser know website is optimized for mobile-->
+        <title>TROY BLOG</title>
+    </head>
 
 
 <body>
@@ -78,8 +104,8 @@
                     </div>
                 </li>
             </ul>
-            <div class="row profile">
-                <div class="profile__slideshow">
+            <div class="row profile boxes">
+                <div class="profile__slideshow box">
                     <div class="swiper-container" style="width:100%">
                         <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -99,17 +125,17 @@
                         <div class="swiper-slide">Slide 9</div>
                         <div class="swiper-slide">Slide 10</div>
                         </div>
-                        <!-- Add Arrows -->
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
                     </div>
                 </div>
-                <div class="profile__content">
+                <div class="profile__content box">
                     <div class="container">
                         <h1 class="profile__content__title">Who Am I</h1>
                         <div class="profile__content__text">
                             <p class="profile__content__text--center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium illum, mollitia dicta quasi neque deserunt earum dolorum officia sapiente quam perspiciatis aliquam? Omnis voluptatibus molestiae culpa laboriosam aut ut rerum.</p>
                         </div>
+                         <!-- Add Arrows -->
+                         <div class="profile__btn--next"><i class="fas fa-arrow-alt-circle-right"></i></div>
+                         <div class="swiper-button-prev"></div>
                     </div>
                     
                 </div>
@@ -1261,7 +1287,14 @@
 
 
         <!--Import jQuery before materialize.js-->
-        <?php include 'php_includes/index_script.php' ?>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script type="text/javascript" src="JS/jquery.waypoints.min.js"></script>
+<script src="./JS/css3-animate-it.js"></script>
+<script type="text/javascript" src="./JS/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+<script tepe="text/javascript" src="./JS/swiper.js"></script>
+<script type="text/javascript" src="./JS/index.js"></script>
         <script>
         //check submitted data
 function checkSub() {

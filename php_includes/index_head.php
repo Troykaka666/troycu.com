@@ -11,12 +11,15 @@
         crossorigin="anonymous">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="./CSS/main.css" />
+    <link type="text/css" rel="stylesheet" href="./new_css/newstyle.min.css" />
     <link rel="stylesheet" href="./CSS/animations.css">
     <link rel="stylesheet" href="./CSS/imgEffectCommon.css" type="text/css">
     <link rel="stylesheet" href="./CSS/imgeffect2.css" type="text/css">
     <link rel="stylesheet" href="./CSS/imgEffect.css" type="text/css">
     <link type="text/css" rel="stylesheet" href="./CSS/materialize.min.css" media="screen,projection" />
     <link rel="stylesheet" href="CSS/animate.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+    <!-- slider libary -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="./node_modules/lazysizes/lazysizes.min.js" async=""></script>
     <!--Let browser know website is optimized for mobile-->

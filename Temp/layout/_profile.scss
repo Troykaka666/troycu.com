@@ -1,0 +1,54 @@
+$mainColor: rgb(92, 90, 90);
+.boxes{
+    display: flex;
+    flex-wrap: wrap
+}
+.box{
+    display: flex
+}
+.profile{
+    &__slideshow{
+        width: 100%;
+        float: left;
+        font-size: 10px;
+        @include atMedium{
+            width: 30%;
+        }
+
+        &__imgholder{
+            overflow: hidden;
+            border: 2px black solid;
+            text-align: center;
+        }
+        &__img{
+            width: 60%;
+            padding: 55px;
+            border: 2px black solid;
+        }
+    }
+    &__content{
+        width: 100%;
+        float:left;
+        position: relative;
+        @include atMedium{
+            width: 70%;
+        }
+        &__title{
+            top: 0;
+            right: 3rem;
+            position: absolute;
+            float: right;
+            color: $mainColor;
+        }
+        &__text{
+            &--center{
+                margin-top: 30%;
+                width: 50%;
+                float: right;
+                padding-right: 2rem;
+                font-size: 1.2rem;
+                border-right: 2px solid $mainColor;
+            }
+        }
+    }
+}

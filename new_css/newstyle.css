@@ -1,2 +1,48 @@
-h1 {
-  color: blue; }
+.boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.profile__slideshow {
+  width: 100%;
+  float: left;
+  font-size: 10px; }
+  @media (min-width: 860px) {
+    .profile__slideshow {
+      width: 30%; } }
+  .profile__slideshow__imgholder {
+    overflow: hidden;
+    border: 2px black solid;
+    text-align: center; }
+  .profile__slideshow__img {
+    width: 60%;
+    padding: 55px;
+    border: 2px black solid; }
+
+.profile__content {
+  width: 100%;
+  float: left;
+  position: relative; }
+  @media (min-width: 860px) {
+    .profile__content {
+      width: 70%; } }
+  .profile__content__title {
+    top: 0;
+    right: 3rem;
+    position: absolute;
+    float: right;
+    color: #5c5a5a; }
+  .profile__content__text--center {
+    margin-top: 30%;
+    width: 50%;
+    float: right;
+    padding-right: 2rem;
+    font-size: 1.2rem;
+    border-right: 2px solid #5c5a5a; }

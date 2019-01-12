@@ -29,7 +29,7 @@ gulp.task("style", function(){
         .pipe(gulp.dest("./new_css/"))
         .pipe(cssmin())
         .pipe(rename({suffix: ".min"}))
-        .pipe(gulp.dest("./css_new/"));
+        .pipe(gulp.dest("./new_css"));
 });
 
 gulp.task("watch", function(){
