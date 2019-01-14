@@ -1,0 +1,12 @@
+.parallaxx{
+  height: 20rem;
+  width: 100%;
+  background-color: aqua;
+  margin-top: 10rem;
+  @include atMedium{
+
+  }
+  @include atLarge{
+      
+  }
+}
