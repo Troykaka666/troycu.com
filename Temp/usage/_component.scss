@@ -1,0 +1,46 @@
+//variable
+$mainColor: rgb(92, 90, 90);    
+$bgtextColor: rgba(128, 128, 128, 0.11);
+
+
+//custom container
+.container-1{
+    padding: 0;
+    @include atSmall{
+        padding: 2rem 1rem;
+    }
+    @include atLarge{
+        padding: 2rem 4rem;
+    }
+}
+
+
+//Linear text
+.lineartext-maincolor{
+    color:transparent;
+    background-image: linear-gradient(
+        to bottom,
+        rgb(39, 225, 235),
+        #0288d1 10%,
+        rgb(13, 226, 226), 
+    );
+    background-clip: text;
+}
+
+
+//background video
+.bg-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .5;
+    overflow: hidden;
+    &__show{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
