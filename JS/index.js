@@ -3,6 +3,33 @@ $(".hide-homep").hide();
 
 setTimeout(function() {
   $(document).ready(function() {
+
+    var toggle = true;
+    $(".sidenav-menu").click(function(){
+      if(toggle){
+        $(".navicon-1").removeClass("fa-bars");
+        $(".navicon-1").addClass("fa-times");
+        toggle = false;
+        console.log("sdfasd   "+toggle);
+      }else{
+        $(".navicon-1").removeClass("fa-times");
+        $(".navicon-1").addClass("fa-bars");
+        toggle = true;
+        console.log("sdfasfgd   "+toggle);
+      };
+      
+      
+    });
+
+
+
+
+
+
+
+
+
+
     //textarea charactercount
     $("input#input_text, textarea#textarea2").characterCounter();
 

@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+.navicon-2 {
+  display: none; }
+
 .lineartext-maincolor {
   color: transparent;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#27e1eb), color-stop(10%, #0288d1), to(#0de2e2));

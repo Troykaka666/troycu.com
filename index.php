@@ -10,8 +10,9 @@
     <div class="row hide-homep">
         <a href="#" data-activates="slide-out" class="button-collapse tooltipped sidenav-menu" id="side-menu" data-position="right"
             data-tooltip="Click to Open/Close the Menu">
-            <i class="fas fa-bars cyan-text"></i>
+            <i class="fas fa-bars cyan-text  navicon-1"></i>
         </a>
+        
         <div class="col s12 m12 l12" style="margin: 0;padding: 0">
             <div class="row">
                 <ul class="tabs tab-fix" id="tab-nav">
@@ -78,42 +79,7 @@
                     </div>
                 </li>
             </ul>
-            <div class="row profile">
-                <div class="profile__slideshow">
-                    <div class="swiper-container" style="width:100%">
-                        <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="profile__slideshow__imgholder">
-                                <img src="img/headerme.jpeg" class="profile__slideshow__img" alt="" class="">
-                            </div> 
-                        </div>
-                        <div class="swiper-slide">
-                        <img src="img/psb.jpg" style="width: 100%;" alt="" class="">
-                        </div>
-                        <div class="swiper-slide">Slide 3</div>
-                        <div class="swiper-slide">Slide 4</div>
-                        <div class="swiper-slide">Slide 5</div>
-                        <div class="swiper-slide">Slide 6</div>
-                        <div class="swiper-slide">Slide 7</div>
-                        <div class="swiper-slide">Slide 8</div>
-                        <div class="swiper-slide">Slide 9</div>
-                        <div class="swiper-slide">Slide 10</div>
-                        </div>
-                        <!-- Add Arrows -->
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>
-                </div>
-                <div class="profile__content">
-                    <div class="container">
-                        <h1 class="profile__content__title">Who Am I</h1>
-                        <div class="profile__content__text">
-                            <p class="profile__content__text--center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium illum, mollitia dicta quasi neque deserunt earum dolorum officia sapiente quam perspiciatis aliquam? Omnis voluptatibus molestiae culpa laboriosam aut ut rerum.</p>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
+
         </section>
         
         </div>

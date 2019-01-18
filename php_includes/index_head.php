@@ -9,6 +9,8 @@
     <!-- Import Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
+        <!-- Logo -->
+        <link type="image/png" rel="logo troywu" href="./img/troy_logo.png">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="./CSS/main.css" />
     <link type="text/css" rel="stylesheet" href="./new_css/newstyle.min.css" />
