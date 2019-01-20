@@ -4,6 +4,9 @@ $bgtextColor: rgba(128, 128, 128, 0.11);
 
 
 //custom container
+.outter-container{
+    margin: 0 2rem;
+}
 .container-1{
     padding: 0;
     @include atSmall{
@@ -30,6 +33,7 @@ $bgtextColor: rgba(128, 128, 128, 0.11);
 
 //background video
 .bg-video{
+    padding: 0 2rem;
     position: absolute;
     top: 0;
     left: 0;

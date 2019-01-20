@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<?php include 'php_includes/connectDB.php' ?>
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Troy's first self-build website. I myself am entirely made of flasw, stitched together with good intentions">
+        <meta name="keywords" content="TroyWu Troy's_blog Hongbo Wu KSU Blog ">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <!-- Import Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+            crossorigin="anonymous">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="./CSS/main.css" />
+        <link type="text/css" rel="stylesheet" href="./new_css/newstyle.min.css" />
+        <link type="image/png" rel="logo troywu" href="../img/troy_logo.png">
+
+        <link rel="stylesheet" href="./CSS/animations.css">
+        <link rel="stylesheet" href="./CSS/imgEffectCommon.css" type="text/css">
+        <link rel="stylesheet" href="./CSS/imgeffect2.css" type="text/css">
+        <link rel="stylesheet" href="./CSS/imgEffect.css" type="text/css">
+        <link type="text/css" rel="stylesheet" href="./CSS/materialize.min.css" media="screen,projection" />
+        <link rel="stylesheet" href="CSS/animate.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+        <!-- slider libary -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <script src="./node_modules/lazysizes/lazysizes.min.js" async=""></script>
+        <!--Let browser know website is optimized for mobile-->
+        <title>TROY BLOG</title>
+    </head>
+<body>
+        <!-- Tab4  -->
+        <div class="col s12" id="tab4">
+            <div class="row" style="margin-top: 0px" id="project_header">
+                <div class="container project_tt" style="text-align: center">
+                    <h5 class="project_title" id="project_title">Project Showcases</h5>
+                </div>
+                <!-- gallery image size: 800 * 600 -->
+            </div>
+            <div class="container">
+                <div class="row row-1">
+                    <div class="col m12 l10">
+                        <div class="row">
+                            <div class="col m7 scrollspy animatedParent" id="project1">
+                                <div class="card animated fadeInDown">
+                                    <div class="card-image">
+                                        <img src="img/project1_cover.png" alt="">
+                                        <span class="card-title hide-on-med-and-up card_project_title">Materialize Framework Demos</span>
+                                        <a href="#abstract1" class="btn-floating halfway-fab waves-effect waves-light cyan modal-trigger">
+                                            <i class="material-icons">add</i>
+                                        </a>
+                                    </div>
+                                    <div class="card-content">
+                                        <p class="project_starts">
+                                            <i class="material-icons">start</i>
+                                            <i class="material-icons">start</i>
+                                            <i class="material-icons">start</i>
+                                            <i class="material-icons">start</i>
+                                            <i class="material-icons">start</i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col m5 hide-on-small-only">
+                                <div class="img-content">
+                                    <h3 class="prjoect_headingcolor">Materialize Framework Demos</h3>
+                                    <ul>
+                                        <li>Fully responsive on mobile devides or desktop</li>
+                                        <li>Implemented by Using Materialize CSS framework</li>
+                                        <li>Built by HTML, CSS, Javascript, jQuery, SASS</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col m5 hide-on-small-only">
+                                <div class="img-content">
+                                    <h3 class="prjoect_headingcolor">Bootstrap 4 Demos</h3>
+                                    <ul>
+                                        <li>Fully responsive on mobile devides or desktop</li>
+                                        <li>Implemented by Using Bootstrap 4 CSS framework</li>
+                                        <li>Built by HTML, CSS, Javascript, jQuery</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col m7 scrollspy animatedParent" id="project4">
+                                <div class="card animated fadeInUpShort">
+                                    <div class="card-image">
+                                        <img src="projectimg/bootstrap.jpg" alt="">
+                                        <span class="card-title hide-on-med-and-up card_project_title">Bootstrap 4 Demos</span>
+                                        <a href="#abstract4" class="btn-floating halfway-fab waves-effect waves-light cyan modal-trigger">
+                                            <i class="material-icons">add</i>
+                                        </a>
+                                    </div>
+                                    <div class="card-content">
+                                        <p class="project_starts">
+                                            <i class="material-icons">start</i>
+                                            <i class="material-icons">start</i>
+                                            <i class="material-icons">start</i>
+                                            <i class="material-icons">start</i>
+                                            <i class="material-icons">start</i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col m7 scrollspy animatedParent" id="project2">
+                                <div class="card animated fadeInUpShort">
+                                    <div class="card-image">
+                                        <img src="projectimg/cms3.png" alt="">
+                                        <span class="card-title hide-on-med-and-up card_project_title">Hello World</span>
+                                        <a href="#abstract2" class="btn-floating halfway-fab waves-effect waves-light cyan modal-trigger">
+                                            <i class="material-icons">add</i>
+                                        </a>
+                                    </div>
+                                    <div class="card-content">
+                                        <p class="project_starts">
+                                            <i class="material-icons">start</i>
+                                            <i class="material-icons">start</i>
+                                            <i class="material-icons">start</i>
+                                            <i class="material-icons">start</i>
+                                            <i class="material-icons">start</i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col m5 hide-on-small-only">
+                                <div class="img-content">
+                                    <h3 class="prjoect_headingcolor">Custom Content Management System</h3>
+                                    <ul>                   
+                                        <li>Be able to manage posts and comments</li>
+                                        <li>Be able to login to system as an admin or a qulify user</li>
+                                        <li>Built by HTML, CSS, Javascript, jQuery, PHP</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col m5 hide-on-small-only">
+                                <div class="img-content">
+                                    <h3 class="prjoect_headingcolor">Pig Dice Game</h3>
+                                    <ul>
+                                        <li>Pig is what’s known as a jeopardy game</li>
+                                        <li>Custom winning condition</li>
+                                        <li>Built by HTML, CSS, Javascript, jQuery</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col m7 scrollspy animatedParent" id="project3">
+                                <div class="card animated fadeInUpShort">
+                                    <div class="card-image">
+                                        <img src="projectimg/piggame.png" alt="">
+                                        <span class="card-title hide-on-med-and-up card_project_title">Pig Dice Game</span>
+                                        <a href="#abstract3" class="btn-floating halfway-fab waves-effect waves-light cyan modal-trigger">
+                                            <i class="material-icons">add</i>
+                                        </a>
+                                    </div>
+                                    <div class="card-content">
+                                        <p class="project_starts">
+                                            <i class="material-icons">start</i>
+                                            <i class="material-icons">start</i>
+                                            <i class="material-icons">start</i>
+                                            <i class="material-icons">start</i>
+                                            <i class="material-icons">start</i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l2">
+                        <div class="col show-on-medium-and-down m3 l2 s12">
+                            <ul class="pinned section table-of-contents">
+                                <li>
+                                    <a href="#project1" class="scrllspy_label">Materilize CSS Framework Demos</a>
+                                </li>
+                                <li>
+                                    <a href="#project4" class="scrllspy_label">Bootstrap 4 Demos</a>
+                                </li>
+                                <li>
+                                    <a href="#project2" class="scrllspy_label">Custome Content Management System</a>
+                                </li>
+                                <li>
+                                    <a href="#project3" class="scrllspy_label">Javascipt Game</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top:500px;"></div>
+
+        </div>
+
+
+ <!-- Modal 1 -->
+ <div id="abstract1" class="modal project_model">
+    <div class="modal-content">
+        <h4 class="prjoect_headingcolor">Materilize Projects</h4>
+        <div class="materialboxed">
+            <img src="projectimg/bizland.png" alt="" class="responsive-img">
+        </div>
+        <p>Link:
+            <a href="web_projects/bizland/index.html" target="_blank">Bizland</a>
+        </p>
+        <br>
+        <div class="materialboxed">
+            <img src="projectimg/oniminfood.png" alt="" class="responsive-img">
+        </div>
+        <p>Link:
+            <a href="web_projects/Omnifood - After Section 7/index.html" target="_blank">Omnifood</a>
+        </p>
+        <br>
+        <div class="materialboxed">
+            <img src="projectimg/quazzu.png" alt="" class="responsive-img">
+        </div>
+        <p>Link:
+            <a href="web_projects/qauzzu/index.html" target="_blank">Qauzzu</a>
+        </p>
+        <br>
+        <div class="materialboxed">
+            <img src="projectimg/travallieve.png" alt="" class="responsive-img">
+        </div>
+        <p>Link:
+            <a href="web_projects/travelville/index.html" target="_blank">Travelville</a>
+        </p>
+        <br>
+        <div class="materialboxed">
+            <img src="projectimg/madmin.png" alt="" class="responsive-img">
+        </div>
+        <p>Link:
+            <a href="web_projects/Madmin/index.html" target="_blank">Madmin</a>
+        </p>
+        <br>
+    </div>
+</div>
+                
+<!-- modal 2 -->
+ <div id="abstract2" class="modal project_model">
+    <div class="modal-content">
+        <h4 class="prjoect_headingcolor">Custom Content Management System</h4>
+        <div class="materialboxed">
+            <img src="projectimg/cms1.png" alt="" class="responsive-img">
+        </div>
+        <br>
+        <div class="materialboxed">
+            <img src="projectimg/cms2.png" alt="" class="responsive-img">
+        </div>
+        <br>
+        <div class="materialboxed">
+            <img src="projectimg/cms3.png" alt="" class="responsive-img">
+        </div>
+        <br>
+        <div class="materialboxed">
+            <img src="projectimg/cms4.png" alt="" class="responsive-img">
+        </div>
+        <br>
+        <div class="materialboxed">
+            <img src="projectimg/cms5.png" alt="" class="responsive-img">
+        </div>
+        <br>
+    </div>
+</div>
+ <!-- modal 3 -->
+ <div id="abstract3" class="modal project_model">
+    <div class="modal-content">
+        <h4 class="prjoect_headingcolor">Pig Dice Game</h4>
+        <div class="materialboxed">
+            <img src="projectimg/piggame.png" alt="" class="responsive-img">
+        </div>
+        <br>
+        <div class="materialboxed">
+            <img src="projectimg/pg.png" alt="" class="responsive-img">
+        </div>
+        <p>Link:
+            <a href="web_projects/Pig-Game/index.html" target="_blank">Let's play</a>
+        </p>
+    </div>
+</div>
+        <!-- Modal 4 -->
+<div id="abstract4" class="modal project_model">
+    <div class="modal-content">
+        <h4 class="prjoect_headingcolor">Bootstrap 4 Projects</h4>
+        <div class="materialboxed">
+            <img src="projectimg/bproject2.png" alt="" class="responsive-img">
+        </div>
+        <p>Link:
+            <a href="web_projects/bProjects/bProject1/index.html" target="_blank">BusinessMen</a>
+        </p>
+        <br>
+        <div class="materialboxed">
+            <img src="projectimg/bProject1.png" alt="" class="responsive-img">
+        </div>
+        <p>Link:
+            <a href="web_projects/bProjects/bProject3/index.html" target="_blank">SmartTisanLOL</a>
+        </p>
+        <br>
+    </div>
+</div>
+
+
+
+
+                        <!--Import jQuery before materialize.js-->
+                        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+                        <script type="text/javascript" src="JS/jquery.waypoints.min.js"></script>
+                        <script src="./JS/css3-animate-it.js"></script>
+                        <script type="text/javascript" src="./JS/materialize.min.js"></script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+                        <script tepe="text/javascript" src="./JS/swiper.js"></script>
+                        <script type="text/javascript" src="./JS/index.js"></script>
+                                <script>
+                                //check submitted data
+                        function checkSub() {
+                          var name = document.getElementById('name').value;
+                          var content = document.getElementById('content').value;
+                          var nameL = name.length;
+                          var contentL = content.length;
+                          if(name === ""){
+                              alert("Please Enter Your Name");
+                          }else if(nameL > 10){
+                              alert("Name Too Long");
+                          }else if(content === ""){
+                              alert("Please Say Something");
+                          }else if(contentL > 60){
+                              alert("You say too much");
+                          }else{
+                              document.getElementById("comment_form").submit();
+                          }
+                        }
+                        
+                        function checkAdmin() {
+                          var name = document.getElementById('admin_name').value;
+                          var key = document.getElementById('admin_key').value;
+                        
+                          var default_name = "<?php echo $user_acc ?>";
+                          var default_key = "<?php echo $user_key ?>";
+                        
+                          if (name === default_name && key === default_key) {
+                            document.getElementById("admin_login").submit();
+                          }else{
+                              alert("Please check your account and password");
+                          }
+                        }
+                        
+                        var count = <?php echo $unapprove_count; ?>;
+                        function noticf_icon(x) {
+                              if (x <= 0) {
+                                  document.getElementById("notif_icon").style.display = "none";
+                              }
+                          }
+                          
+                        noticf_icon(count);
+                        
+                                </script>
+                </body>
+                </html>

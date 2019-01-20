@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+.outter-container {
+  margin: 0 2rem; }
+
 .container-1 {
   padding: 0; }
   @media (min-width: 480px) {
@@ -16,6 +19,7 @@
           background-clip: text; }
 
 .bg-video {
+  padding: 0 2rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -236,10 +240,10 @@
         right: 17rem; } }
 
 .about {
-  margin-top: 11rem;
-  -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
-          clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
-  position: relative; }
+  margin-top: 15rem;
+  position: relative;
+  height: 1000px;
+  background-color: antiquewhite; }
 
 .parallaxx {
   height: 20rem;
