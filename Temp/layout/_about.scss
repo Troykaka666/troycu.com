@@ -1,7 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 .about{
     margin-top: 15rem;
     // clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
     position: relative;
     height: 1000px;
     background-color: antiquewhite;
+    font-family: 'Roboto', sans-serif;
+}
+
+.coding{
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    padding-top: 1.5rem;
+    
+    @include atLarge{
+        font-size: 3.5rem;
+    }
+    &__icon{
+        margin-right: 2rem;
+        &-left{
+
+        }
+        &-right{
+
+        }
+    }
+    &__title{
+        
+    }
+}
+
+.skillset{
+    width: 60%;
+    margin: auto;
+    height: 10rem;
+    display: flex;
+    align-items: stretch;
+    &__container{
+        position: relative;
+
+        flex: 0 0 25%;
+        &-icon{
+            display: flex;
+            background-color: aliceblue;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &__icon{
+        fill: aqua;
+        width: 3rem;
+        height: 3rem;  
+    }
+    &__percent{
+        display: block;
+        background-color: rgb(7, 119, 218);
+        width: 100%;
+        height: 100%;
+    }
 }

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 .outter-container {
   margin: 0 2rem; }
 
@@ -243,7 +244,60 @@
   margin-top: 15rem;
   position: relative;
   height: 1000px;
-  background-color: antiquewhite; }
+  background-color: antiquewhite;
+  font-family: 'Roboto', sans-serif; }
+
+.coding {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1.5rem; }
+  @media (min-width: 1300px) {
+    .coding {
+      font-size: 3.5rem; } }
+  .coding__icon {
+    margin-right: 2rem; }
+
+.skillset {
+  width: 60%;
+  margin: auto;
+  height: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+  .skillset__container {
+    position: relative;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%; }
+    .skillset__container-icon {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      background-color: aliceblue;
+      height: 100%;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+  .skillset__icon {
+    fill: aqua;
+    width: 3rem;
+    height: 3rem; }
+  .skillset__percent {
+    display: block;
+    background-color: #0777da;
+    width: 100%;
+    height: 100%; }
 
 .parallaxx {
   height: 20rem;
