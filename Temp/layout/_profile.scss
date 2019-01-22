@@ -1,223 +1,72 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-
-.navicon{
-    &-2{
-        display: none;    
-    }
-}
-
-//layout style
+// font-family: 'Roboto', sans-serif;
 .profile{
+    height: 100vh;
+
     display: flex;
-    flex-wrap: wrap;
-    font-family: 'Roboto', sans-serif;
 
-    &--item1{
-        flex:0 0 100%;
-        padding: 2rem;
+    &_box-1{
+        margin-top: 5rem;
+        flex: 0 0 40%;
         
-        @include atLarge{
-            flex:0 0 30%;
-        
-        }
+        background-color: rgba(250, 235, 215, 0.226);
     }
-    &--item2{
-        flex: 1;
-        order: -1;
-        @include atLarge{
-            order: 0;
-        }
-    }
-    &__card{
-        perspective: 150rem;
-        transform-style: preserve-3d;
-        cursor: pointer;
-        text-align: center;
-        position: relative;
-        display: block;
-        &--side{
-            position: absolute;
-            transition: all 0.8s linear;
-            top: 0;
-            left: 25%;
-            width: 50%;
-            
-            backface-visibility: hidden;
-            @include atMedium{
-                left: 30%;
-                width: 40%;
-                
-            }
-            @include atLarge{
-                width: 100%;
-            }
-            &-front{
-                background-color: white;
-            }
-            &-back{
-                transform: rotateY(180deg);
-                background-color: white;
-            }
-        }
-    
-        &:hover &--side-front{
-           transform: rotateY(-180deg);
-        }
-        &:hover &--side-back{
-            transform: rotateY(0);
-         }
+    &_box-2{
+        flex: 0 0 60%;
+        background-color: rebeccapurple;
     }
 
-    &__img{
-        position: relative;
-        padding: 0.5rem;
-        width: 100%;
-        border: 0.3px black solid;
-        box-shadow: 0.1rem 0.5rem 1rem $mainColor;
-        z-index: 99;
-        @include atMedium{
-            width: 100%;
-        }
-        @include atLarge{
-            width: 100%;
-        }
-    }
-    &__content{
-        position: relative;
-        height: 30rem;
-
-        &__header{
-            font-size: 3.5rem;
-            text-align: right;
-            display: inline;
-            cursor: pointer;
-            position: absolute;
-            right: 3rem;
-            font-weight: 600;
-            z-index: 1;
-            text-shadow: 0 1rem 3rem rgba(0, 0, 0, .3);
-            transition: all 0.5s ease-in-out;
-            @include atSmall{
-                font-size: 3.5rem;
-                right: 0rem;
-            }
-            @include atMedium{
-                font-size: 5rem;
-                right: 15rem;
-            }
-            @include atLarge{         
-                right: 10rem;
-            }
-            &:hover{
-                letter-spacing: 0.8rem;
-                transform: rotateZ(1deg);
-            }
-        }
-
-        &__text{
-            text-align: center;
-            padding: 8rem 2rem 3rem 2rem;
-            line-height: 3rem;
-            font-size: 1.2rem;
-            font-weight: 400;
-            position: relative;
-            @include atSmall{
-                padding: 8rem 2rem 2.5rem 2rem;
-            }
-            @include atMedium{
-                padding: 8rem 2rem 5rem 2rem;
-            }
-            @include atLarge{
-                padding: 8rem 2rem 10rem 2rem;
-            }
-            &:hover::before,
-            &:hover::after{
-                width: 8rem;
-                @include atMedium{
-                    width: 10rem;
-                }
-                @include atLarge{
-                    width: 15rem;
-                }
-            }
-            &::before, &::after{
-                position: absolute;
-                content: "";
-                color: black;
-                font-size: 5rem;
-                background-color: grey;
-                height: .2rem;
-                width: 1rem;
-                bottom: 0;
-                transition: width 0.5s ease-out;
-                @include atMedium{
-
-                }
-            }
-            &::after{
-                left: 50%;
-                border-top-right-radius: 50%;
-                border-bottom-right-radius: 50%;
-            }
-            &::before{
-                bottom: 0;
-                right: 50%;
-                border-top-left-radius: 50%;
-                border-bottom-left-radius: 50%;
-            }
-            @include atSmall{
-                font-size: 1.3rem;
-            }
-            @include atMedium{
-                width: 50%;
-                margin: 0 auto;
-            }
-            @include atLarge{
-                width: 70%;
-                padding-right: 5rem;
-                padding-top: 10rem;
-            }
-        }
-    }
-  
 }
 
-
-// BG text
-.bg-text{
-    position: absolute;
-    font-size: 5rem;
-    color: $bgtextColor;
-    @include atMedium{
-        font-size: 8rem;
-    }
-    &--1{
-        top: 5rem;
-        left: 1rem;
-        @include atSmall{
-            left: 3rem;
-        }
-        @include atMedium{
-            left: 15rem;
-        }
-        @include atLarge{
-            top: 5rem;
-            left: 10rem;
+.image{
+    clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+    box-shadow: $box-shadow;
+    &__holder{
+        border-bottom: 2px solid black;
+        width: 40rem;
+        height: 40rem;
+        background-image: url("../../img/headerme.jpeg");
+        background-size: cover;
+        background-position: 0rem; 
+        &-img{
+            width: 100%;
         }
     }
-    &--2{
-        bottom: 5rem;
-        right: 1rem;
-        @include atSmall{
-            bottom: 7rem;
-            right: 2.5rem;
+    
+}
+.intro{
+    width: 40rem;
+    background-color: rgb(238, 238, 238);
+    margin-top: -8rem;
+    padding: 8rem 0 5rem 0;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5%;
+    box-shadow: $box-shadow;
+    &_title{
+        width: 20rem;
+        height: 2rem;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        &-name{
+            color: rgb(11, 180, 180);
+            padding-top: 0.5rem;
+            display: flex;   
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin: 0;
+            position: relative;
         }
-        @include atMedium{
-            bottom: 3rem;
-            right: 15rem;
-        }
-        @include atLarge{
-            right: 17rem;
-        }
+    }
+    &__btn{
+        border: none;
     }
 }

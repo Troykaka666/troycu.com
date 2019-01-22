@@ -1,11 +1,45 @@
 //variable
 $mainColor: rgb(92, 90, 90);    
 $bgtextColor: rgba(128, 128, 128, 0.11);
+$box-shadow: 0 1.5rem 4rem rgba(black, .2);
 
+
+
+//section-header
+.section-header{
+    font-size: 3.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    text-shadow: 0 0.2rem 1.5rem rgba(0, 0, 0, .3);
+            transition: all 0.5s ease-in-out;
+            @include atSmall{
+                font-size: 3.5rem;
+                right: 0rem;
+            }
+            @include atMedium{
+                font-size: 4rem;
+                
+            }
+            @include atLarge{         
+                
+            }
+            &:hover{
+                letter-spacing: 0.8rem;
+                transform: rotateZ(1deg);
+            }
+}
 
 //custom container
 .outter-container{
-    margin: 0 2rem;
+    padding: 0;
+    @include atLarge{
+        margin: 0 5rem;
+    }
+
+    &-nopadding{
+        padding: 0;
+        
+    }
 }
 .container-1{
     padding: 0;
@@ -13,7 +47,7 @@ $bgtextColor: rgba(128, 128, 128, 0.11);
         padding: 2rem 1rem;
     }
     @include atLarge{
-        padding: 2rem 4rem;
+        padding: 2rem 1rem;
     }
 }
 
@@ -22,10 +56,10 @@ $bgtextColor: rgba(128, 128, 128, 0.11);
 .lineartext-maincolor{
     color:transparent;
     background-image: linear-gradient(
-        to bottom,
-        rgb(39, 225, 235),
-        #0288d1 10%,
-        rgb(13, 226, 226), 
+        to right,
+        rgb(183, 241, 241),
+        #0288d1 70%,
+        rgb(66, 108, 156), 
     );
     background-clip: text;
 }

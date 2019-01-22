@@ -21,15 +21,6 @@ setTimeout(function() {
       
     });
 
-
-
-
-
-
-
-
-
-
     //textarea charactercount
     $("input#input_text, textarea#textarea2").characterCounter();
 
@@ -146,4 +137,39 @@ setTimeout(function() {
       );
     });
   });
+
+  //counting effect
+  $('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 2000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
+
+   //moving text
+   var movingText = true;
+   setInterval(function(){
+    if(movingText){
+      $('#webdev').animate(
+        {bottom: "32px", opacity: '0'}, 1000
+      );
+      $("#kayaker").animate(
+        {bottom: '35px', opacity: '1'}, 1000
+      );
+      movingText = false;
+    }else{
+      $('#webdev').animate(
+        {bottom: "5px", opacity: '1'}, 1000
+      );
+      $("#kayaker").animate(
+        {bottom: '0px', opacity: '0'}, 1000
+      );
+      movingText = true;
+    }
+   }, 3000);
 }, 800);

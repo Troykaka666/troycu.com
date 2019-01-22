@@ -1,18 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 .about{
-    margin-top: 15rem;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
     // clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
     position: relative;
     height: 1000px;
-    background-color: antiquewhite;
+  
     font-family: 'Roboto', sans-serif;
+    background-color: antiquewhite;
+    clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
 }
 
 .coding{
     display: flex;
     font-size: 2rem;
-    justify-content: center;
+    justify-content: flex-start;
     padding-top: 1.5rem;
     
     @include atLarge{
@@ -20,6 +23,22 @@
     }
     &__icon{
         margin-right: 2rem;
+        font-size: 3.5rem;
+        cursor: pointer;
+        font-weight: 600;
+        text-shadow: 0 0.2rem 1.5rem rgba(0, 0, 0, .3);
+                transition: all 0.5s ease-in-out;
+                @include atSmall{
+                    font-size: 3.5rem;
+                    right: 0rem;
+                }
+                @include atMedium{
+                    font-size: 5rem;
+                    right: 15rem;
+                }
+                @include atLarge{         
+                    right: 10rem;
+                }
         &-left{
 
         }
@@ -33,32 +52,86 @@
 }
 
 .skillset{
-    width: 60%;
+    width: 80%;
     margin: auto;
-    height: 10rem;
     display: flex;
     align-items: stretch;
+    flex-wrap: wrap;
+    flex-direction: row;
+ 
     &__container{
+        overflow: hidden;
+        flex-direction: row;
+        flex: 0 0 20%;
+        border: 1px black solid;
+        
+        transition: box-shadow 0.8s ease;
+    }
+    &__holder{
+        padding: 2rem;
+        width: 100%;
         position: relative;
-
-        flex: 0 0 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
         &-icon{
+            fill: rgb(221, 128, 41);
+            width: 8rem;
+            height: 8rem;
+            display: inline-block;
+            &-icon-html{
+                fill: rgb(221, 128, 41); 
+            }
+        }
+        &-title{
+            padding: 0;
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 500;
+        }
+        &-overlap{
             display: flex;
-            background-color: aliceblue;
-            height: 100%;
+            background-position: 0;
+            bottom: 0;
+            position: absolute;
+            background-image: radial-gradient(rgb(251, 255, 0) 20%,rgba(218, 77, 77, 0.623) 80%);
+            width: 0%;
+            height: 0%;
+            
             justify-content: center;
             align-items: center;
+            clip-path: polygon(50% 0%, 65% 29%, 98% 35%, 76% 61%, 79% 91%, 49% 78%, 21% 91%, 26% 61%, 2% 35%, 36% 29%);            opacity: 0;
+            transition: all 0.5s ease;
         }
+        &-count{
+            color: rgb(20, 94, 160);
+            transform: scale(3.5);
+            font-weight: 500;
+            font-size: 5rem;
+            transition: all 0.5s ease;
+            &-small{
+              
+            }
+        }
+        &:hover &-overlap{
+            opacity: 1;
+            height: 50%;
+            width: 50%;
+            padding: 2rem;
+           
+        }
+        &:hover &-count{
+            font-size: 0.8rem;
+        }
+        &:hover &-count-small{
+            font-size: 0.05rem;
+        }
+       
     }
-    &__icon{
-        fill: aqua;
-        width: 3rem;
-        height: 3rem;  
+    &__container:hover {
+        
     }
-    &__percent{
-        display: block;
-        background-color: rgb(7, 119, 218);
-        width: 100%;
-        height: 100%;
-    }
+
 }
