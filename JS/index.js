@@ -156,18 +156,18 @@ setTimeout(function() {
    setInterval(function(){
     if(movingText){
       $('#webdev').animate(
-        {bottom: "32px", opacity: '0'}, 1000
+        {bottom: "50px"}, 1000
       );
-      $("#kayaker").animate(
-        {bottom: '35px', opacity: '1'}, 1000
+      $("#selftaught").animate(
+        {bottom: '45px'}, 1000
       );
       movingText = false;
     }else{
       $('#webdev').animate(
-        {bottom: "5px", opacity: '1'}, 1000
+        {bottom: "0px"}, 1000
       );
-      $("#kayaker").animate(
-        {bottom: '0px', opacity: '0'}, 1000
+      $("#selftaught").animate(
+        {bottom: '5px'}, 1000
       );
       movingText = true;
     }
