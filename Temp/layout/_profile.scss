@@ -1,9 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-// font-family: 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto');
+
+//////////       variable ////////////////////////////
+$roboto: 'Roboto', sans-serif;
+$rubik:  'Josefin Sans', sans-serif;
+
+$shadow: 0.3rem 0.5rem 1rem rgba(0,0,0,.25);
+
 $maincolor: rgb(29, 236, 236);
+
+
+//               Profile section layout              ///////////////////////////////
 .profile{
     font-size: 10px;
-    font-family: 'Roboto', sans-serif;
+    font-family: $roboto;
     height: 100vh;
     display: flex;
     &_box-1{
@@ -13,20 +22,39 @@ $maincolor: rgb(29, 236, 236);
     }
     &_box-2{
         flex: 0 0 70%;
-        background-color: rebeccapurple;
+        background-color: rgb(173, 123, 30);
+        display: flex;
+        padding: 1rem;
+        flex-direction: column;
+        &-header{
+            flex: 0 0 30%;
+            width: 100%;
+            display: flex;
+            background-color: white;
+        }
+        &-column{
+            flex: 0 0 70%;
+            display: flex;
+            &-sub{
+                flex: 0 0 50%;
+                background-color: rgb(16, 103, 179);
+                width: 100%;
+            }
+        }
     }
 
 }
 
+//PROFILE BOX 1
 .column{
     &__box1{
         flex: 0 0 40%;
         width: 100%;
-        background-image: url("../../img/responsiveweb.png");
+        background-image: url("../../img/little_aboutme.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        position: relative;
+        position: center;
         filter: blur(3px);
         &-overlap{
             width: 100%;
@@ -41,7 +69,6 @@ $maincolor: rgb(29, 236, 236);
         flex: 0 0 1;
         display: flex;
         justify-content: center;
-        
     }
 }
 
@@ -120,7 +147,70 @@ $maincolor: rgb(29, 236, 236);
     }
 }
 
-//animation text
+//profile BOX 2
+//header
+.boxheader__container{
+    width: 100%;
+    text-align: center;
+    font-family: $rubik;
+    &__header{
+        font-size: 5rem;
+        font-weight: 700;
+        text-shadow: $shadow;
+        cursor: default;
+        margin: 0;
+        padding: 1rem;
+        display: inline-block;
+        position: relative;
+        &::before, &::after{
+            color: #000;
+            font-size: 3.8rem;
+            position: absolute;
+            transform-origin: center;
+            height: 100%;
+            transform: scale(0);
+            transition: transform 0.5s ease;
+        }
+        &::after{
+            content: "}";
+            right:0;
+            margin-right: -1rem;
+        }
+        &::before{
+            content: "{";      
+            margin-left: -1rem;    
+            left: 0;
+           
+        }
+       &:hover::before, &:hover::after{
+           transform: scale(1);
+       }
+   
+       &:hover{
+           animation: spining_text 0.8s 0.2s linear;
+       }
+    }
+    &__pa{
+        font-size: 1.5rem;
+        padding: 0 10rem;
+        font-family: $roboto;
+        
+    }
+}
+
+
+
+
+//animation
+
+@keyframes spining_text{
+    0%{
+        transform: rotateX(0) scale(0.5);
+    }
+    100%{
+        transform: rotateX(360deg) scale(1.5);
+    }
+}
 
 .animation__text{
 font-weight:500;
