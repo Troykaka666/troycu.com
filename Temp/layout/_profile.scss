@@ -1,13 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto');
-
-//////////       variable ////////////////////////////
-$roboto: 'Roboto', sans-serif;
-$rubik:  'Josefin Sans', sans-serif;
-
-$shadow: 0.3rem 0.5rem 1rem rgba(0,0,0,.25);
-
-$maincolor: rgb(29, 236, 236);
-
 
 //               Profile section layout              ///////////////////////////////
 .profile{
@@ -22,24 +12,45 @@ $maincolor: rgb(29, 236, 236);
     }
     &_box-2{
         flex: 0 0 70%;
-        background-color: rgb(173, 123, 30);
         display: flex;
-        padding: 1rem;
+        padding: 0 1rem 0 1rem;
         flex-direction: column;
+        overflow-y: scroll;
+        overflow-x: hidden;
         &-header{
             flex: 0 0 30%;
             width: 100%;
             display: flex;
             background-color: white;
+            padding-bottom: 25rem;
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
         }
         &-column{
-            flex: 0 0 70%;
+            margin-top: -7rem;
+            padding: 0;
+            flex: 0 0 60%;
             display: flex;
             &-sub{
                 flex: 0 0 50%;
-                background-color: rgb(16, 103, 179);
+                padding-top: 10rem;
                 width: 100%;
+                background-color: lightblue;
+                background-image: url("../../img/web_development.jpeg");
+                background-position: 50% -5rem;
+                background-size: cover;
+                &-left{
+                    background-color: #1b464c;
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='65' height='32.5' viewBox='0 0 65 32.5'%3E%3Cdefs%3E%3Crect stroke='%231b464c' stroke-width='0.14' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='2' height='2' patternUnits='userSpaceOnUse'%3E%3Cg stroke='%231b464c' stroke-width='0.14'%3E%3Crect fill='%23204a50' width='1' height='1'/%3E%3Crect fill='%231b464c' width='1' height='1' x='1' y='1'/%3E%3Crect fill='%23244d53' width='1' height='1' y='1'/%3E%3Crect fill='%23295157' width='1' height='1' x='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='b' width='5' height='11' patternUnits='userSpaceOnUse'%3E%3Cg fill='%232d555a'%3E%3Cuse xlink:href='%23s' x='2' y='0'/%3E%3Cuse xlink:href='%23s' x='4' y='1'/%3E%3Cuse xlink:href='%23s' x='1' y='2'/%3E%3Cuse xlink:href='%23s' x='2' y='4'/%3E%3Cuse xlink:href='%23s' x='4' y='6'/%3E%3Cuse xlink:href='%23s' x='0' y='8'/%3E%3Cuse xlink:href='%23s' x='3' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='7' height='7' patternUnits='userSpaceOnUse'%3E%3Cg fill='%2332595e'%3E%3Cuse xlink:href='%23s' x='1' y='1'/%3E%3Cuse xlink:href='%23s' x='3' y='4'/%3E%3Cuse xlink:href='%23s' x='5' y='6'/%3E%3Cuse xlink:href='%23s' x='0' y='3'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='11' height='5' patternUnits='userSpaceOnUse'%3E%3Cg fill='%231b464c'%3E%3Cuse xlink:href='%23s' x='1' y='1'/%3E%3Cuse xlink:href='%23s' x='6' y='3'/%3E%3Cuse xlink:href='%23s' x='8' y='2'/%3E%3Cuse xlink:href='%23s' x='3' y='0'/%3E%3Cuse xlink:href='%23s' x='0' y='3'/%3E%3C/g%3E%3Cg fill='%23365c61'%3E%3Cuse xlink:href='%23s' x='8' y='3'/%3E%3Cuse xlink:href='%23s' x='4' y='2'/%3E%3Cuse xlink:href='%23s' x='5' y='4'/%3E%3Cuse xlink:href='%23s' x='10' y='0'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='23' patternUnits='userSpaceOnUse'%3E%3Cg fill='%233ebb97'%3E%3Cuse xlink:href='%23s' x='2' y='5'/%3E%3Cuse xlink:href='%23s' x='23' y='13'/%3E%3Cuse xlink:href='%23s' x='4' y='18'/%3E%3Cuse xlink:href='%23s' x='35' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='61' height='31' patternUnits='userSpaceOnUse'%3E%3Cg fill='%233ebb97'%3E%3Cuse xlink:href='%23s' x='16' y='0'/%3E%3Cuse xlink:href='%23s' x='13' y='22'/%3E%3Cuse xlink:href='%23s' x='44' y='15'/%3E%3Cuse xlink:href='%23s' x='12' y='11'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='65' height='32.5'/%3E%3Crect fill='url(%23b)' width='65' height='32.5'/%3E%3Crect fill='url(%23c)' width='65' height='32.5'/%3E%3Crect fill='url(%23d)' width='65' height='32.5'/%3E%3Crect fill='url(%23e)' width='65' height='32.5'/%3E%3Crect fill='url(%23f)' width='65' height='32.5'/%3E%3C/svg%3E");
+                    background-attachment: fixed;
+                    background-size: cover;
+                    border-right: 10px solid $mainSymbolColor;
+                }
             }
+        }
+        &-content{
+            flex: 0 0 50%;
+            height: 50rem;
+            background-color: antiquewhite;
         }
     }
 
@@ -55,7 +66,7 @@ $maincolor: rgb(29, 236, 236);
         background-position: center;
         background-repeat: no-repeat;
         position: center;
-        filter: blur(3px);
+        filter: blur(0.8px);
         &-overlap{
             width: 100%;
             height: 100%;
@@ -97,10 +108,10 @@ $maincolor: rgb(29, 236, 236);
         left: 50%;
         transform: translate(-50%, 80%) scale(2);
         font-size: 1.7rem;
-        font-weight: 600;
+        font-weight: 800;
+        font-family: $ubuntu;
         padding: 0;
         margin: 0;
-        color: $maincolor;
         opacity: 0;
         transition: all 0.5s ease;
     }
@@ -132,7 +143,7 @@ $maincolor: rgb(29, 236, 236);
         &__icon{
             width: 2.5rem;
             height: 2.5rem;
-            fill: $maincolor;
+            fill: $mainSymbolColor;
             margin-right: 1rem;
         }
         &__description{
@@ -151,24 +162,24 @@ $maincolor: rgb(29, 236, 236);
 //header
 .boxheader__container{
     width: 100%;
-    text-align: center;
-    font-family: $rubik;
+    font-family: $ubuntu;
+    position: relative;
     &__header{
+        margin:0 0 0 5rem;
         font-size: 5rem;
-        font-weight: 700;
-        text-shadow: $shadow;
-        cursor: default;
-        margin: 0;
-        padding: 1rem;
-        display: inline-block;
-        position: relative;
         &::before, &::after{
-            color: #000;
             font-size: 3.8rem;
             position: absolute;
             transform-origin: center;
             height: 100%;
             transform: scale(0);
+            color:transparent;
+            background-image: linear-gradient(
+                to bottom,
+                rgb(68, 71, 233),
+                aqua, 
+            );
+            background-clip: text;
             transition: transform 0.5s ease;
         }
         &::after{
@@ -185,20 +196,143 @@ $maincolor: rgb(29, 236, 236);
        &:hover::before, &:hover::after{
            transform: scale(1);
        }
-   
-       &:hover{
-           animation: spining_text 0.8s 0.2s linear;
-       }
     }
     &__pa{
+        text-align: center;
         font-size: 1.5rem;
         padding: 0 10rem;
         font-family: $roboto;
-        
+        letter-spacing: 0.1rem;
+        font-weight: 400;
+    }
+    &__symbol{
+        color: black;
+        font-size: 5rem;
+        position: absolute;
+        top: 5rem;
+        left: 10rem;
+        color:transparent;
+        background-image: linear-gradient(
+            to bottom,
+            rgb(0, 188, 212),
+            rgb(54, 54, 54), 
+        );
+        background-clip: text;
     }
 }
 
+//////// description /////////////////
+.description{
+    &__holder{
+        height: 100%;
+        position: relative;
+    }
+    &__header{
+        font-size: 2.3rem; 
+        font-family: $ubuntu;
+        font-weight: 700;
+        padding: 0;
+        margin: 0;
+        left: 10%;
+        letter-spacing: 0.2rem;
+        transform: translateX(-10%);
+     }
+    &__percent{
+        font-size: 1.2rem;
+        opacity: 0;
+        margin-left: 0.5rem;
+      
+    }
+    &__skill:hover &__percent{
+        opacity: 1;
+    }
+    &__skill{
+        position: absolute;
+        padding: 0 0.2rem;
+        color: #bdb8b8;
+        font-size: 1.8rem;
+        font-weight: 400;
+        cursor: pointer;
+        backface-visibility: hidden;
+        height: 2.5rem;
+        transition: all 0.5s ease-in-out;
+        &:hover{
+            transform: scale(1.1);
+            border: 1px solid $mainSymbolColor;
+            background-color: $mainSymbolColor;
+            color: #ffffff;
+            box-shadow: $box-shadow;
+            z-index: 5;
+        }
+        &-html{
+            top: 2rem;
+            left: 3.8rem;
+        }
+        &-css{
+            top: 5.8rem;
+            left: 10.8rem;
+        }
+        &-javascript{
+            top: 13.8rem;
+            left: 9.8rem;
+        }
+        &-Jquery{
+            top: 16.8rem;
+            left: 6.8rem;
+        }
+        &-php{
+            top: 10.8rem;
+            left: 11.8rem;
+        }
+        &-sass{
+            top: 1.8rem;
+            left: 14.8rem;
+        }
+        &-BOOTSTRAP{
+            top: 6.8rem;
+            left: 15.8rem;
+        }
+        &-angular{
+            top: 2.8rem;
+            left: 19.8rem;
+        }
+        &-node{
+            top: 8.8rem;
+            left: 4.8rem;
+        }
+        &-mysql{
+            top: 17.8rem;
+            left: 15.8rem;
+        }
+        &-Materialize{
+            top: 9.8rem;
+            left: 18.8rem;
+        }
+        &-python{
+            top: 13.3rem;
+            left: 20.8rem;
+        }
+        &-percent{
+            position: absolute;
+        }
+    }
+}
 
+//////// job /////////////////
+.job{
+    margin-top: -20rem;
+    padding-bottom: 40rem; 
+    background-color: #1b464c62;
+    &__holder{
+        padding-top: 20rem;
+        position: relative;
+        text-align: center;
+    }
+    &__header{ 
+        color: white;
+        opacity: 0;
+    }
+}
 
 
 //animation
@@ -212,10 +346,19 @@ $maincolor: rgb(29, 236, 236);
     }
 }
 
+
+///usage
 .animation__text{
 font-weight:500;
 color:Black;
 margin-top:5px;
 margin-bottom:20px;
 position:relative;
+}
+
+.hiden{
+    opacity: 0;
+}
+.showup{
+    opacity: 1;
 }

@@ -15,3 +15,9 @@
       @content;
     }
   }
+
+  @mixin atLarge-1420{
+    @media (min-width:1420){
+      @content;
+    }
+  }
