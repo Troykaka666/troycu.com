@@ -173,41 +173,41 @@ setTimeout(function() {
     }
    }, 3000);
 
-   //animate description text
-   var showingText = true;
-   setInterval(function(){
-    var l1 = $(".job__header-1");
-    var l2 = $(".job__header-2");
-    var l3 = $(".job__header-3");
-    if (showingText) {
-      l1.animate({
-        opacity:1,
-        fontSize: '3.5rem'
-      },1000);
-      l2.animate({
-        opacity:1,
-        fontSize: '4rem'
-      },3000);
-      l3.animate({
-        opacity:1,
-        fontSize: '5rem'
-      },5000);
-      showingText = false;
-    }else{
-      l1.animate({
-        opacity:0,
-        fontSize: '1.5rem'
-      },6000);
-      l2.animate({
-        opacity:0,
-        fontSize: '1.5rem'
-      },4000);
-      l3.animate({
-        opacity:0,
-        fontSize: '1.5rem'
-      },2000);
-      showingText = true;
-    }
-   });
+  //  animate description text
+  //  var showingText = true;
+  //  setInterval(function(){
+  //   var l1 = $(".job__header-1");
+  //   var l2 = $(".job__header-2");
+  //   var l3 = $(".job__header-3");
+  //   if (showingText) {
+  //     l1.animate({
+  //       opacity:1,
+  //       fontSize: '3.5rem'
+  //     },1000);
+  //     l2.animate({
+  //       opacity:1,
+  //       fontSize: '4rem'
+  //     },3000);
+  //     l3.animate({
+  //       opacity:1,
+  //       fontSize: '5rem'
+  //     },5000);
+  //     showingText = false;
+  //   }else{
+  //     l1.animate({
+  //       opacity:0,
+  //       fontSize: '1.5rem'
+  //     },6000);
+  //     l2.animate({
+  //       opacity:0,
+  //       fontSize: '1.5rem'
+  //     },4000);
+  //     l3.animate({
+  //       opacity:0,
+  //       fontSize: '1.5rem'
+  //     },2000);
+  //     showingText = true;
+  //   }
+  //  });
 
 }, 800);
