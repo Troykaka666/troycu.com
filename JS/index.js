@@ -173,6 +173,16 @@ setTimeout(function() {
     }
    }, 3000);
 
+  //  $('#showcase-more').click(function(){
+  //   $('.showcase__reveal').animate(
+  //     {top: '0'}
+  //   );
+  //  });
+  //  $('.showcase__reveal-close').click(function(){
+  //   $('.showcase__reveal').animate(
+  //     {top: '100%'}
+  //   );
+  //  });
   //  animate description text
   //  var showingText = true;
   //  setInterval(function(){

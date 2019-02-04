@@ -154,7 +154,7 @@
           background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='65' height='32.5' viewBox='0 0 65 32.5'%3E%3Cdefs%3E%3Crect stroke='%231b464c' stroke-width='0.14' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='2' height='2' patternUnits='userSpaceOnUse'%3E%3Cg stroke='%231b464c' stroke-width='0.14'%3E%3Crect fill='%23204a50' width='1' height='1'/%3E%3Crect fill='%231b464c' width='1' height='1' x='1' y='1'/%3E%3Crect fill='%23244d53' width='1' height='1' y='1'/%3E%3Crect fill='%23295157' width='1' height='1' x='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='b' width='5' height='11' patternUnits='userSpaceOnUse'%3E%3Cg fill='%232d555a'%3E%3Cuse xlink:href='%23s' x='2' y='0'/%3E%3Cuse xlink:href='%23s' x='4' y='1'/%3E%3Cuse xlink:href='%23s' x='1' y='2'/%3E%3Cuse xlink:href='%23s' x='2' y='4'/%3E%3Cuse xlink:href='%23s' x='4' y='6'/%3E%3Cuse xlink:href='%23s' x='0' y='8'/%3E%3Cuse xlink:href='%23s' x='3' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='7' height='7' patternUnits='userSpaceOnUse'%3E%3Cg fill='%2332595e'%3E%3Cuse xlink:href='%23s' x='1' y='1'/%3E%3Cuse xlink:href='%23s' x='3' y='4'/%3E%3Cuse xlink:href='%23s' x='5' y='6'/%3E%3Cuse xlink:href='%23s' x='0' y='3'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='11' height='5' patternUnits='userSpaceOnUse'%3E%3Cg fill='%231b464c'%3E%3Cuse xlink:href='%23s' x='1' y='1'/%3E%3Cuse xlink:href='%23s' x='6' y='3'/%3E%3Cuse xlink:href='%23s' x='8' y='2'/%3E%3Cuse xlink:href='%23s' x='3' y='0'/%3E%3Cuse xlink:href='%23s' x='0' y='3'/%3E%3C/g%3E%3Cg fill='%23365c61'%3E%3Cuse xlink:href='%23s' x='8' y='3'/%3E%3Cuse xlink:href='%23s' x='4' y='2'/%3E%3Cuse xlink:href='%23s' x='5' y='4'/%3E%3Cuse xlink:href='%23s' x='10' y='0'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='23' patternUnits='userSpaceOnUse'%3E%3Cg fill='%233ebb97'%3E%3Cuse xlink:href='%23s' x='2' y='5'/%3E%3Cuse xlink:href='%23s' x='23' y='13'/%3E%3Cuse xlink:href='%23s' x='4' y='18'/%3E%3Cuse xlink:href='%23s' x='35' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='61' height='31' patternUnits='userSpaceOnUse'%3E%3Cg fill='%233ebb97'%3E%3Cuse xlink:href='%23s' x='16' y='0'/%3E%3Cuse xlink:href='%23s' x='13' y='22'/%3E%3Cuse xlink:href='%23s' x='44' y='15'/%3E%3Cuse xlink:href='%23s' x='12' y='11'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='65' height='32.5'/%3E%3Crect fill='url(%23b)' width='65' height='32.5'/%3E%3Crect fill='url(%23c)' width='65' height='32.5'/%3E%3Crect fill='url(%23d)' width='65' height='32.5'/%3E%3Crect fill='url(%23e)' width='65' height='32.5'/%3E%3Crect fill='url(%23f)' width='65' height='32.5'/%3E%3C/svg%3E");
           background-attachment: fixed;
           background-size: cover;
-          border-right: 0.5rem solid rgba(0, 188, 212, 0.3); }
+          border-right: 0.5rem solid rgba(158, 158, 158, 0.712); }
     .profile_box-2-third {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 50%;
@@ -162,9 +162,15 @@
       background-color: antiquewhite; }
     .profile_box-2-fouth {
       -webkit-box-flex: 0;
+          -ms-flex: 0 0 80%;
+              flex: 0 0 80%;
+      background-color: #4b4a4a;
+      margin-top: -8rem; }
+    .profile_box-2-fifth {
+      -webkit-box-flex: 0;
           -ms-flex: 0 0 100%;
               flex: 0 0 100%;
-      background-color: #1b464c; }
+      background-color: #b30000; }
 
 .column__box1 {
   -webkit-box-flex: 0;
@@ -439,13 +445,15 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  position: relative; }
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
   .pallax__overlap {
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 188, 212, 0.3); }
+    background-color: rgba(158, 158, 158, 0.712); }
 
 @-webkit-keyframes spining_text {
   0% {
@@ -637,28 +645,99 @@
       font-size: 0.05rem; }
 
 .showcase {
+  margin-top: 15rem;
   width: 100%;
-  background-color: whitesmoke; }
-  .showcase-container {
-    margin: 20rem 0; }
+  background-color: #095319;
+  height: 30rem; }
+  .showcase__item {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .showcase__image {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
+    width: 100%; }
+  .showcase__info {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 60%;
+            flex: 0 0 60%;
+    width: 100%;
+    background-color: #e7e7e7; }
+  .showcase__header {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem; }
+  .showcase__link {
+    font-family: "Ubuntu", sans-serif;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    display: inline-block; }
+    .showcase__link-icon {
+      color: #00bcd4; }
+  .showcase__reveal {
+    position: absolute;
+    z-index: 22;
+    top: -90%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 0.3rem;
+    background-color: rgba(247, 247, 247, 0.705);
+    -webkit-transition: top 0.5s ease-in;
+    transition: top 0.5s ease-in; }
+    .showcase__reveal-close {
+      float: right;
+      display: inline-block;
+      margin-right: 0.5rem;
+      margin-top: 0.7rem;
+      font-size: 1.3rem; }
+    .showcase__reveal-header {
+      float: left;
+      display: inline-block;
+      font-size: 2.5rem; }
+  .showcase__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: 50;
+    -webkit-transition: opacity 0.5s 0.7s ease;
+    transition: opacity 0.5s 0.7s ease; }
+  .showcase__reveal:hover {
+    top: 0; }
+  .showcase__reveal:hover .showcase__container {
+    opacity: 1; }
 
 .swiper-container {
   width: 100%;
-  padding-top: 5rem;
-  padding-bottom: 50px;
-  height: 400px; }
+  height: 100%; }
 
 .swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px !important;
-  height: 300px !important;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden; }
-
-.swiper-card {
-  width: 100%;
-  height: 100%; }
+  padding: 0 0.3rem;
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .parallaxx {
   height: 20rem;

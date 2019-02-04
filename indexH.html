@@ -23,7 +23,7 @@
         <link rel="stylesheet" href="./CSS/imgEffect.css" type="text/css">
         <link type="text/css" rel="stylesheet" href="./CSS/materialize.min.css" media="screen,projection" />
         <link rel="stylesheet" href="CSS/animate.css" type="text/css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
         <!-- slider libary -->
         <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
         <script src="./node_modules/lazysizes/lazysizes.min.js" async=""></script>
@@ -202,34 +202,65 @@
                   
                 </div>
                 <div class="profile_box-2-fouth">
-                    
+                    <div class="showcase">
+                            <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                      <div class="swiper-slide">
+                                            <div class="showcase__item">
+                                                <img class="showcase__image" src="https://source.unsplash.com/900x600/?modern" alt="">
+                                                <div class="showcase__info">
+                                                    <p class="showcase__header">Lorem ipsum dolor sit amet.</p>
+                                                    
+                                                    <div href="#" class="showcase__link">
+                                                        <i class="fab fa-github-square showcase__link-icon"></i>
+                                                        <a href="" class="showcase__link-title">Github</a>
+                                                    </div>
+                                                    <a href="#" class="showcase__link">Demo</a>
+                                                </div>
+                                                <div class="showcase__reveal">
+                                                    <div class="showcase__container">
+                                                        <h4 class="showcase__reveal-header">About:</h4>
+                                                        <p class="showcase__reveal-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis quisquam, natus dolor dolore reprehenderit delectus voluptatem expedita laboriosam doloremque accusamus?</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                      </div>
+                                      <div class="swiper-slide">
+                                            <div class="showcase__item">
+                                                <img class="showcase__image" src="https://source.unsplash.com/900x600/?modern" alt="">
+                                                <div class="showcase__info">
+                                                    <p class="showcase__header">Lorem ipsum dolor sit amet.</p>
+                                                    <a href="#" class="showcase__link">Github</a>
+                                                    <div class="showcase__like">
+                                                        <a class="waves-effect waves-light btn">likes</a>
+                                                        <a class="waves-effect waves-light btn" id="showcase-more">More</a>
+                                                    </div>
+                                                    <p class="showcase__num">123</p>
+                                                </div>
+                                                <div class="showcase__reveal">
+                                                    <div class="showcase__container">
+                                                        <h4 class="showcase__reveal-header">About:</h4>
+                                                        <p class="showcase__reveal-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis quisquam, natus dolor dolore reprehenderit delectus voluptatem expedita laboriosam doloremque accusamus?</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                      </div>
+                                      <div class="swiper-slide">Slide 3</div>
+                                      <div class="swiper-slide">Slide 4</div>
+                                      
+                                    </div>
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-pagination"></div>
+                                  </div>
+                    </div>
+                   
                 </div>
+                <div class="profile_box-2-fifth">
+
+                </div>
+                
             </div>   
         </div>
-        <!-- <div class="outter-container-nopadding">
-            <div class="showcase">
-                
-                <div class="showcase-container">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/2)">
-                                <a href="" class="btn">Project</a>
-                            </div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/3)"></div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/4)"></div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/5)"></div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/6)"></div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/7)"></div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/8)"></div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/9)"></div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/10)"></div>
-                        </div>
-                 
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            </div>
-        </div>  -->
     </section>
 
             <!-- scroll button -->
@@ -265,27 +296,18 @@
 <script src="./JS/css3-animate-it.js"></script>
 <script type="text/javascript" src="./JS/materialize.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
-  <!-- Initialize Swiper -->
-  <script>
+<script type="text/javascript" src="./JS/index.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+<script>
     var swiper = new Swiper('.swiper-container', {
-      effect: 'coverflow',
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows : true,
-      },
+      slidesPerView: 3,
+      spaceBetween: 30,
       pagination: {
         el: '.swiper-pagination',
+        clickable: true,
       },
-    });
-  </script>
-<script type="text/javascript" src="./JS/index.js"></script>
-        <script>
+    });</script>
+<script>
         //check submitted data
 function checkSub() {
   var name = document.getElementById('name').value;
