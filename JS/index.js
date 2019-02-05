@@ -83,23 +83,7 @@ setTimeout(function() {
     });
     //init carousel.slider
 
-    $(window).scroll(function() {
-      if ($(this).scrollTop() >= 50) {
-        // If page is scrolled more than 50px
-        $(".Gotop").fadeIn(200); // Fade in the arrow
-      } else {
-        $(".Gotop").fadeOut(200); // Else fade out the arrow
-      }
-    });
-    $(".Gotop").click(function() {
-      // When arrow is clicked
-      $("body,html").animate(
-        {
-          scrollTop: 0 // Scroll to top of body
-        },
-        500
-      );
-    });
+
 
     //model
     $(".modal").modal();
@@ -127,15 +111,42 @@ setTimeout(function() {
     //Init Collapsible
     $(".collapsible").collapsible();
 
-    //scroll down smoothly
+    //scroll smoothly
+    var pageBottom = $(document).height()-$(window).height(); 
+    $(window).scroll(function() {
+      if ($(this).scrollTop() < pageBottom) {
+        // If page is scrolled more than 50px
+        $(".Godown").fadeIn(200); // Fade in the arrow
+      } else {
+        $(".Godown").fadeOut(200); // Else fade out the arrow
+      }
+    });
     $(".Godown").click(function() {
       $("body,html").animate(
         {
-          scrollTop: "+=700"
+          scrollTop: pageBottom
         },
         500
       );
     });
+  });
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {
+      // If page is scrolled more than 50px
+      $(".Gotop").fadeIn(200); // Fade in the arrow
+    } else {
+      $(".Gotop").fadeOut(200); // Else fade out the arrow
+    }
+  });
+  $(".Gotop").click(function() {
+    // When arrow is clicked
+    $("body,html").animate(
+      {
+        scrollTop: 0 // Scroll to top of body
+      },
+      500
+    );
   });
 
   //counting effect

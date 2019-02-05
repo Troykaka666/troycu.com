@@ -1,82 +1,6 @@
 
 //               Profile section layout              ///////////////////////////////
-.profile{
-    font-size: 10px;
-    font-family: $roboto;
-    height: 93vh;
-    display: flex;
-    flex-direction: column;
-    @include atLarge-1420{
-        flex-direction: row;
-    }
-    &_box-1{
-        flex: 0 0 20%;
-        display: flex;
-        flex-direction: column;
-        @include atLarge-1420{
-            flex: 0 0 30%;
-            flex-direction: column;
-        }
-    }
-    &_box-2{
-        flex: 0 0 70%;
-        display: flex;
-        padding: 0 1rem 0 1rem;
-        flex-direction: column;
-        overflow-y: scroll;
-        overflow-x: hidden;
-        @include atLarge-1420{
-            
-        }
-        &-header{
-            flex: 0 0 30%;
-            width: 100%;
-            display: flex;
-            background-color: white;
-            padding-bottom: 25rem;
-            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-        }
-        &-column{
-            margin-top: -7rem;
-            padding: 0;
-            flex: 0 0 60%;
-            display: flex;
-            &-sub{
-                flex: 0 0 50%;
-                padding-top: 10rem;
-                width: 100%;
-                background-color: lightblue;
-                background-image: url("../../img/web_development.jpeg");
-                background-position: 50% -5rem;
-                background-size: cover;
-                &-left{
-                    background-color: #1b464c;
-                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='65' height='32.5' viewBox='0 0 65 32.5'%3E%3Cdefs%3E%3Crect stroke='%231b464c' stroke-width='0.14' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='2' height='2' patternUnits='userSpaceOnUse'%3E%3Cg stroke='%231b464c' stroke-width='0.14'%3E%3Crect fill='%23204a50' width='1' height='1'/%3E%3Crect fill='%231b464c' width='1' height='1' x='1' y='1'/%3E%3Crect fill='%23244d53' width='1' height='1' y='1'/%3E%3Crect fill='%23295157' width='1' height='1' x='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='b' width='5' height='11' patternUnits='userSpaceOnUse'%3E%3Cg fill='%232d555a'%3E%3Cuse xlink:href='%23s' x='2' y='0'/%3E%3Cuse xlink:href='%23s' x='4' y='1'/%3E%3Cuse xlink:href='%23s' x='1' y='2'/%3E%3Cuse xlink:href='%23s' x='2' y='4'/%3E%3Cuse xlink:href='%23s' x='4' y='6'/%3E%3Cuse xlink:href='%23s' x='0' y='8'/%3E%3Cuse xlink:href='%23s' x='3' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='7' height='7' patternUnits='userSpaceOnUse'%3E%3Cg fill='%2332595e'%3E%3Cuse xlink:href='%23s' x='1' y='1'/%3E%3Cuse xlink:href='%23s' x='3' y='4'/%3E%3Cuse xlink:href='%23s' x='5' y='6'/%3E%3Cuse xlink:href='%23s' x='0' y='3'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='11' height='5' patternUnits='userSpaceOnUse'%3E%3Cg fill='%231b464c'%3E%3Cuse xlink:href='%23s' x='1' y='1'/%3E%3Cuse xlink:href='%23s' x='6' y='3'/%3E%3Cuse xlink:href='%23s' x='8' y='2'/%3E%3Cuse xlink:href='%23s' x='3' y='0'/%3E%3Cuse xlink:href='%23s' x='0' y='3'/%3E%3C/g%3E%3Cg fill='%23365c61'%3E%3Cuse xlink:href='%23s' x='8' y='3'/%3E%3Cuse xlink:href='%23s' x='4' y='2'/%3E%3Cuse xlink:href='%23s' x='5' y='4'/%3E%3Cuse xlink:href='%23s' x='10' y='0'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='23' patternUnits='userSpaceOnUse'%3E%3Cg fill='%233ebb97'%3E%3Cuse xlink:href='%23s' x='2' y='5'/%3E%3Cuse xlink:href='%23s' x='23' y='13'/%3E%3Cuse xlink:href='%23s' x='4' y='18'/%3E%3Cuse xlink:href='%23s' x='35' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='61' height='31' patternUnits='userSpaceOnUse'%3E%3Cg fill='%233ebb97'%3E%3Cuse xlink:href='%23s' x='16' y='0'/%3E%3Cuse xlink:href='%23s' x='13' y='22'/%3E%3Cuse xlink:href='%23s' x='44' y='15'/%3E%3Cuse xlink:href='%23s' x='12' y='11'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='65' height='32.5'/%3E%3Crect fill='url(%23b)' width='65' height='32.5'/%3E%3Crect fill='url(%23c)' width='65' height='32.5'/%3E%3Crect fill='url(%23d)' width='65' height='32.5'/%3E%3Crect fill='url(%23e)' width='65' height='32.5'/%3E%3Crect fill='url(%23f)' width='65' height='32.5'/%3E%3C/svg%3E");
-                    background-attachment: fixed;
-                    background-size: cover;
-                    border-right: 0.5rem solid $mainSymbolColor-border;
-                }
-            }
-        }
-        &-third{
-            flex: 0 0 50%;
-            background-color: antiquewhite;
-        }
-        &-fouth{
-            flex: 0 0 80%;
-            background-color: rgb(75, 74, 74);
-            margin-top: -8rem;
-         
-        }
-        &-fifth{
-            flex: 0 0 100%;
-            background-color: rgb(179, 0, 0);
-           
-         
-        }
-    }
 
-}
 
 //PROFILE BOX 1
 .column{
@@ -191,12 +115,13 @@
     &__header{
         margin:0 0 0 5rem;
         font-size: 5rem;
+        text-shadow: $shadow;
         &::before, &::after{
             font-size: 3.8rem;
             position: absolute;
             transform-origin: center;
             height: 100%;
-            transform: scale(0);
+            transform: scale(1);
             color:transparent;
             background-image: linear-gradient(
                 to bottom,
@@ -214,17 +139,13 @@
         &::before{
             content: "{";      
             margin-left: -1rem;    
-            left: 0;
-           
+            left: 0;       
         }
-       &:hover::before, &:hover::after{
-           transform: scale(1);
-       }
     }
     &__pa{
         text-align: center;
         font-size: 1.5rem;
-        padding: 0 10rem;
+        padding: 3rem 10rem;
         font-family: $roboto;
         letter-spacing: 0.1rem;
         font-weight: 400;
@@ -242,6 +163,29 @@
             rgb(54, 54, 54), 
         );
         background-clip: text;
+    }
+    &__link{
+        position: relative;
+        display: inline-block;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: box-shadow 0.5s ease;
+        &-download{
+            padding: 1rem 3rem;
+            border-radius: 1.7rem;
+            color: #ffffff;
+            font-size: 1.3rem;
+            transition: all 0.5s ease;
+            background-color: $mainSymbolColor;
+        }
+        &:hover{
+            box-shadow: $box-shadow;
+        }
+        &:hover &-download{
+            border-radius: 0;
+            color: #e4dcdc;
+            border: 1px rgb(226, 226, 226) dotted;
+        }
     }
 }
 
@@ -350,8 +294,8 @@
 //////// job(right box) /////////////////
 .job{
     margin-top: -20rem;
-    padding-bottom: 40rem; 
-    background-color: #1b464c62;
+    padding-bottom: 5rem; 
+    background-color: $mainSymbolColor-border;
     &__holder{
         padding-top: 20rem;
         position: relative;

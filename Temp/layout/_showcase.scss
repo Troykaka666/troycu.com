@@ -2,15 +2,18 @@
 .showcase{
   margin-top: 15rem;
   width: 100%;
-  background-color: rgb(9, 83, 25);
   height: 30rem;
+  padding: 1rem 0;
   &__item{
     height: 100%;
     width: 100%;
     position: relative;
-    
     display: flex;
     flex-direction: column;
+    transition: box-shadow 0.5s ease;
+    &:hover{
+      box-shadow: 0 1.5rem 3rem rgba(aqua, .5);
+    }
   }
   &__image{
     flex: 0 0 40%;
@@ -19,7 +22,7 @@
   &__info{
     flex: 0 0 60%;
     width: 100%;
-    background-color: rgb(231, 231, 231);
+    background-color: whitesmoke;
   }
   &__header{
     font-family: $ubuntu;
@@ -30,12 +33,48 @@
   }
   &__link{
     font-family: $ubuntu;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
     display: inline-block;
-    &-icon{
-      color: $mainSymbolColor;
+    color: $mainSymbolColor;
+    padding: 0.1rem 0.22rem;
+    position: relative;
+    transition: all 0.3s ease;
+    &:last-child{
+      margin-left: 0.5rem;
     }
+    &-icon{
+      transition: all 0.5s ease-in;
+    }
+    &::before{
+      content: "";
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.089);
+      left: 0;
+      bottom: -0rem;
+      width: 100%;
+      height: 0rem;
+      transition: height 0.5s ease-in;
+    }
+    &:hover{
+      color: $maincolor-header;
+      background-color: rgba(226, 226, 226, 0.918);
+      box-shadow: $box-shadow;
+      border: $maincolor-header dotted 0.1rem; 
+    }
+    &:hover::before{
+      height: 0.1rem;
+      background-color: rgba($maincolor-header, 0.59);
+    }
+    &:hover &-icon{
+      transform: scale(1.2) rotate(-10deg);
+      color: $maincolor-header;
+      z-index: 2;
+    }
+
+  }
+  &__demo{
+    display: block;
   }
   &__reveal{
     position: absolute;
@@ -67,7 +106,7 @@
     transform: translate(-50%,-50%);
     opacity: 0;
     z-index: 50;
-    transition: opacity 0.5s 0.7s ease;
+    transition: opacity 0.6s 0.6s ease-in;
   }
   &__reveal:hover{
     top: 0;
