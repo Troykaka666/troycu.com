@@ -201,7 +201,7 @@
         position: relative;
     }
     &__header{
-        font-size: 2.3rem; 
+        font-size: 2.5rem; 
         font-family: $ubuntu;
         font-weight: 700;
         padding: 0;
@@ -238,39 +238,39 @@
             z-index: 5;
         }
         &-html{
-            top: 2rem;
+            top: 0rem;
             left: 3.8rem;
         }
         &-css{
-            top: 5.8rem;
+            top: 3.8rem;
             left: 10.8rem;
         }
         &-javascript{
-            top: 13.8rem;
+            top: 11.8rem;
             left: 9.8rem;
         }
         &-Jquery{
-            top: 16.8rem;
+            top: 14.8rem;
             left: 6.8rem;
         }
         &-php{
-            top: 10.8rem;
+            top: 8.8rem;
             left: 11.8rem;
         }
         &-sass{
-            top: 1.8rem;
+            top: 0.8rem;
             left: 14.8rem;
         }
         &-BOOTSTRAP{
-            top: 6.8rem;
+            top: 4.8rem;
             left: 15.8rem;
         }
         &-angular{
-            top: 2.8rem;
+            top: 0.8rem;
             left: 19.8rem;
         }
         &-node{
-            top: 8.8rem;
+            top: 6.8rem;
             left: 4.8rem;
         }
         &-mysql{
@@ -294,7 +294,7 @@
 //////// job(right box) /////////////////
 .job{
     margin-top: -20rem;
-    padding-bottom: 5rem; 
+    padding-bottom: 15rem; 
     background-color: $mainSymbolColor-border;
     &__holder{
         padding-top: 20rem;

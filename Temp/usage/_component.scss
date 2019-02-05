@@ -35,7 +35,6 @@ $box-shadow: 0 1.5rem 3rem rgba(black, .2);
     transition: all 0.8s ease;
    &:hover{
     letter-spacing: 0.5rem;
-    font-weight: 400;
     transform: scale(1.05);
    }
 }
@@ -76,9 +75,9 @@ $box-shadow: 0 1.5rem 3rem rgba(black, .2);
 .lineartext-maincolor-1{
     color:transparent;
     background-image: linear-gradient(
-        to right,
-        rgb(255, 255, 255), 
-        rgb(130, 130, 133),
+        to bottom,
+        rgb(15, 142, 192), 
+        rgb(253, 253, 253),
   
     );
     background-clip: text;
