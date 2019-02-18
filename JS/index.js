@@ -113,6 +113,7 @@ setTimeout(function() {
 
     //scroll smoothly
     var pageBottom = $(document).height()-$(window).height(); 
+    
     $(window).scroll(function() {
       if ($(this).scrollTop() < pageBottom) {
         // If page is scrolled more than 50px

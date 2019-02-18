@@ -1,14 +1,16 @@
 .profile{
     font-size: 10px;
     font-family: $roboto;
-    height: 93vh;
+    height: auto;
     display: flex;
     flex-direction: column;
+    
     @include atLarge-1420{
         flex-direction: row;
+        height: 93vh;
     }
     &_box-1{
-        flex: 0 0 20%;
+        flex: 0 0 80%;
         display: flex;
         flex-direction: column;
         @include atLarge-1420{
@@ -21,10 +23,11 @@
         display: flex;
         padding: 0 1rem 0 1rem;
         flex-direction: column;
-        overflow-y: scroll;
-        overflow-x: hidden;
         @include atLarge-1420{
-            
+            box-shadow: $box-shadow;
+            margin-left: 0.5rem;
+            overflow-y: scroll;
+            overflow-x: hidden;
         }
         &-header{
             flex: 0 0 30%;
@@ -37,7 +40,10 @@
         &-column{
             margin-top: -10rem;
             padding: 0;
-            flex: 0 0 60%;
+            flex: 0 0 80%;
+            @include atLarge{
+                flex: 0 0 60%;
+            }
             display: flex;
             &-sub{
                 flex: 0 0 50%;
