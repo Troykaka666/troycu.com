@@ -42,12 +42,13 @@
             padding: 0;
             flex: 0 0 80%;
             @include atLarge{
-                flex: 0 0 60%;
+                flex: 0 0 65%;
             }
             display: flex;
             &-sub{
                 flex: 0 0 50%;
-                padding-top: 10rem;
+                padding-top: 12rem;
+                padding-bottom: 5rem;
                 width: 100%;
                 background-color: lightblue;
                 background-image: url("../../img/web_development.jpeg");

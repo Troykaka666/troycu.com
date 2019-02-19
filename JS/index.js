@@ -81,7 +81,14 @@ setTimeout(function() {
       transition: 1300,
       interval: 5000
     });
-    //init carousel.slider
+    
+
+    //aos scroll animation 
+    AOS.init(
+    {
+      offset: 180
+    }
+    );
 
 
 
@@ -115,7 +122,7 @@ setTimeout(function() {
     var pageBottom = $(document).height()-$(window).height(); 
     
     $(window).scroll(function() {
-      if ($(this).scrollTop() <pageBottom) {
+      if ($(this).scrollTop() < pageBottom) {
         // If page is scrolled more than 50px
         $(".Godown").fadeIn(200); // Fade in the arrow
       } else {
