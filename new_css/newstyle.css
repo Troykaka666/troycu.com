@@ -262,6 +262,10 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -312,6 +316,21 @@
       display: block; }
       .image__about__description-1 {
         height: 1.5rem; }
+
+.media {
+  width: 100%;
+  margin-top: 2rem;
+  text-align: center; }
+  .media a {
+    margin-left: 3rem;
+    background-color: antiquewhite;
+    padding: 1rem;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+  .media a:first-child {
+    margin-left: 0; }
+  .media a i {
+    font-size: 1.5rem; }
 
 .boxheader__container {
   width: 100%;

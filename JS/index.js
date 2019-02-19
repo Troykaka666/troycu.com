@@ -115,7 +115,7 @@ setTimeout(function() {
     var pageBottom = $(document).height()-$(window).height(); 
     
     $(window).scroll(function() {
-      if ($(this).scrollTop() < pageBottom) {
+      if ($(this).scrollTop() <pageBottom) {
         // If page is scrolled more than 50px
         $(".Godown").fadeIn(200); // Fade in the arrow
       } else {
