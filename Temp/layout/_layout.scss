@@ -35,12 +35,14 @@
             display: flex;
             background-color: white;
             padding-bottom: 43rem;
-            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+            
         }
         &-column{
             margin-top: -10rem;
             padding: 0;
             flex: 0 0 80%;
+            z-index: 22;
+            clip-path: polygon(0% 25%, 100% 0%, 100% 100%, 0 100%);
             @include atLarge{
                 flex: 0 0 65%;
             }
@@ -72,6 +74,11 @@
             flex: 0 0 80%;
             margin-top: -8rem;
             padding-bottom: 13rem; 
+            background-color: white;
+            z-index: 0;
+            background-image: url("../../img/tim1.png");
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         &-fifth{
             flex: 0 0 100%;
